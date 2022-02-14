@@ -17,6 +17,8 @@ import os, sys
 
 
 class CourseName:
+    '''This class extracts from the table the name of the course and from the name of the course, extracts the name
+    of the department.'''
     def __init__(self, html_table):
         self.html_table = html_table
 
@@ -64,28 +66,22 @@ class SessionName:
 
 class TableWork:
     length = 0
-
-    # def __init__(self, html_table, course_name, session):
-    #     self.html_table = html_table
-    #     self.course_name = course_name
-    #     self.session = session
     def __init__(self, html_table, course_name, department):
         self.html_table = html_table
         self.course_name = course_name
         self.deparment = department
 
     def extract_row(self):
+        """This method extract rows the checks the length. If len is 3, then it extracts the session name. If the len
+         is 33, it extracts the rest of the course information like section, instructor, size, max, etc."""
         cols = []
         session_row = self.html_table.find_all('td', {'colspan': '14'})
         session_row2 = self.html_table.find_all('td', {'class': 'sess2head'})
         rows = self.html_table.find_all('tr')
         for row in rows:
-            # print('row', row)
-            # print(len(row))
             if len(row) == 3:
                 cols1 = row.find_all('td')
                 session = [x.text.strip() for x in cols1]
-                # print('cols2', session)
                 continue
             elif len(row) == 33:
                 cols = row.find_all('td')
@@ -94,63 +90,13 @@ class TableWork:
 
             else:
                 continue
-            # cols.insert(0, self.course_name)
-            # print(session)
             cols.insert(0, self.deparment)
             cols.insert(1, self.course_name)
             cols.insert(2, session[1])
             # print(cols)
             enrollment_df.loc[TableWork.length] = cols
             TableWork.length += 1
-            # print(enrollment_df)
-            # for item in row:
-            #     print('item', item)
-            #     print(len(item))
-        # courserows = self.html_table.find_all('tr', {'bgcolor':'lightgrey'})
-        # print ('session1', session_row)
-        # print('session2', session_row2)
-        # print('rows', rows)
-        # print(len(item))
-        # print(len(rows))
-        # session = ""
-        # for row in rows:
-        #     # print(row)
-        #     for item in row:
-        #         # print(item)
-        #         if 'tr bgcolor' in item:
-        #             td = row.find_all('td')
-        #             cols = [x.text.strip() for x in td]
-        #             if len(cols) == 17:
-        #                 cols.insert(0, self.course_name)
-        #                 enrollment_df.loc[TableWork.length] = cols
-        #
-        #     else:
-        #         cols = row.find_all('td')
-        #         cols = [x.text.strip() for x in cols]
-        #         if len(cols) == 2:
-        #             for item in cols:
-        #                 if 'Session' in item:
-        #                     session = cols[1]
-        #                     break
-        # for row in rows:
-        #     # print('row', row)
-        #     cols = row.find_all('td')
-        #     cols = [x.text.strip() for x in cols]
-        #     if len(cols) == 17:
-        #         cols.insert(0, self.course_name)
-        #         cols.insert(1, session)
-        #         enrollment_df.loc[TableWork.length] = cols
-        #         TableWork.length += 1
-        # print('cols', cols)
-        # print(enrollment_df)
-
-        # if len(cols) == 2:
-        #     print('cols', cols[1])
-        #     # enrollment_df.loc[SessionName.row_count, 'Session'] = cols[1]
-        #     print('row count', SessionName.row_count)
-        #     # enrollment_df.loc[table_count, 'Session'] = cols[1]
-        #     SessionName.row_count += 1
-
+        print('enrollment df', enrollment_df)
 
 class GroupDepartments:
     headers = ['Dept', 'Course', 'Session', 'Class', 'Start', 'End', 'Days', 'Room', 'Size', 'Max', 'Wait', 'Cap',
@@ -170,38 +116,33 @@ class GroupDepartments:
         grp_courses.to_excel(department + '/' + department + 'ttl.xlsx')
         mod_grp_courses.to_excel(department + '/' + department + '_modalities.xlsx')
 
+
 s = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=s)
-# driver = webdriver.Chrome("C:/Users/family/PycharmProjects/chromedriver.exe")
 driver.get('https://secure.cerritos.edu/schedule/')
-# check_fall_or_spring = driver.find_element(By.XPATH, '/html/body/form/p/b/b/label[1]/input').click()
-# check_fall_or_spring = driver.find_element(By.XPATH, '/html/body/b/b/form/p[1]/label/input').click()
 
-# check_fall_or_spring = driver.find_element(By.XPATH, '/html/body/form/p/b/b/label[2]/input').click()
 check_all = driver.find_element(By.XPATH, '/html/body/form/table[1]/tbody/tr[1]/td[1]/label/input').click()
-# /html/body/form/table[1]/tbody/tr[1]/td[1]/label/input
 check_LA = driver.find_element(By.XPATH, '/html/body/form/table[6]/tbody/tr[5]/td[2]/label/input').click()
-# /html/body/form/table[6]/tbody/tr[5]/td[2]/label/input
-
 
 click_View = driver.find_element(By.XPATH, '/html/body/form/p[4]/input').click()
-# /html/body/form/p[4]/input
 page_loading = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, 'ASL110descs')))
 headers = ['Dept', 'Course', 'Session', 'Class', 'Start', 'End', 'Days', 'Room', 'Size', 'Max', 'Wait', 'Cap', 'Seats',
            'WaitAv', 'Status', 'Instructor', 'Type', 'Hours', 'Books', 'Modality']
 pd.set_option('display.max_columns', None)
 enrollment_df = pd.DataFrame(columns=headers)
-# enrollment_df = enrollment_df[['Size', 'Max']].apply(pd.to_numeric)
+
 page_source = driver.page_source
 soup = BeautifulSoup(page_source, 'lxml')
-# div_table = soup.find_all('div', {'name': 'desc'}).decompose()
-# print(div_table)
+
 table_count = 0
 h2_source = soup.find_all('h2')
 session_source = soup.find_all('tr', {'class': 'sess1head', 'colspan': '14'})
+'Each table consists of a course section'
 tables = soup.find_all(['table', {'cellspacing': '0', 'class': 'class'}])
 
+
 for table in tables:
+    'The for loop extracts from each table information about the course'
     # print('table', table.prettify())
     c = CourseName(html_table=h2_source)
     course_name, department = c.pull_course_name()
