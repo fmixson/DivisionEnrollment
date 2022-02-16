@@ -73,7 +73,8 @@ class TableWork:
 
     def extract_row(self):
         """This method extract rows the checks the length. If len is 3, then it extracts the session name. If the len
-         is 33, it extracts the rest of the course information like section, instructor, size, max, etc."""
+         is 33, it extracts the rest of the course information like section, instructor, size, max, etc. The output is a
+         spreadsheet of each section offered in the semester."""
         cols = []
         session_row = self.html_table.find_all('td', {'colspan': '14'})
         session_row2 = self.html_table.find_all('td', {'class': 'sess2head'})
@@ -96,7 +97,38 @@ class TableWork:
             # print(cols)
             enrollment_df.loc[TableWork.length] = cols
             TableWork.length += 1
-        print('enrollment df', enrollment_df)
+        # print('enrollment df', enrollment_df)
+
+class DataframeWork:
+
+    def __init__(self, enrollment_df):
+        self.enrollment_df = enrollment_df
+
+    def sheet_integers(self):
+        self.enrollment_df['Size'] = pd.to_numeric(self.enrollment_df['Size'], errors='coerce').fillna(0).astype('int')
+        self.enrollment_df['Max'] = pd.to_numeric(self.enrollment_df['Max'], errors='coerce').fillna(0).astype('int')
+        self.enrollment_df['Hours'] = pd.to_numeric(self.enrollment_df['Hours'], errors='coerce').fillna(0).astype('int')
+        return self.enrollment_df
+
+    def lecture_only(self):
+        lecture_df = enrollment_df['Type'] == 'Lecture'
+        lecture_enrollment_df = enrollment_df[lecture_df]
+
+        lecture_enrollment_df.loc[lecture_enrollment_df['Room'] == 'REMOTE', 'Modality'] = 'Remote Course'
+        lecture_enrollment_df.loc[lecture_enrollment_df['Room'] == 'ONLINE', 'Modality'] = 'Online Course'
+        rooms = ['LA106', 'LA109', 'LA201', 'SS207', 'LA213', 'LC218', 'LA110', 'SS211', 'SS225', 'LA103', 'SS224',
+                 'LC217',
+                 'LA211', 'LA202']
+        for room in rooms:
+            lecture_enrollment_df.loc[lecture_enrollment_df['Room'] == room, 'Modality'] = 'Hybrid Course'
+        lecture_enrollment_df.loc[lecture_enrollment_df['Max'] == 15, 'Modality'] = 'In Person'
+        df_groupby_dept = lecture_enrollment_df.groupby(['Dept'])
+
+        lecture_enrollment_df['FTES'] = lecture_enrollment_df['Size'] * (
+                    ((lecture_enrollment_df['Hours'] / 18) * 17.5) / 525)
+        lecture_enrollment_df.to_excel('Division_Enrollment.xlsx')
+        return df_groupby_dept
+
 
 class GroupDepartments:
     headers = ['Dept', 'Course', 'Session', 'Class', 'Start', 'End', 'Days', 'Room', 'Size', 'Max', 'Wait', 'Cap',
@@ -149,26 +181,28 @@ for table in tables:
     t = TableWork(html_table=table, course_name=course_name, department=department)
     t.extract_row()
     table_count += 1
+d = DataframeWork(enrollment_df=enrollment_df)
+d.sheet_integers()
+df_groupby_dept=d.lecture_only()
+# enrollment_df['Size'] = pd.to_numeric(enrollment_df['Size'], errors='coerce').fillna(0).astype('int')
+# enrollment_df['Max'] = pd.to_numeric(enrollment_df['Max'], errors='coerce').fillna(0).astype('int')
+# enrollment_df['Hours'] = pd.to_numeric(enrollment_df['Hours'], errors='coerce').fillna(0).astype('int')
 
-enrollment_df['Size'] = pd.to_numeric(enrollment_df['Size'], errors='coerce').fillna(0).astype('int')
-enrollment_df['Max'] = pd.to_numeric(enrollment_df['Max'], errors='coerce').fillna(0).astype('int')
-enrollment_df['Hours'] = pd.to_numeric(enrollment_df['Hours'], errors='coerce').fillna(0).astype('int')
-
-lecture_df = enrollment_df['Type'] == 'Lecture'
-lecture_enrollment_df = enrollment_df[lecture_df]
-
-lecture_enrollment_df.loc[lecture_enrollment_df['Room'] == 'REMOTE', 'Modality'] = 'Remote Course'
-lecture_enrollment_df.loc[lecture_enrollment_df['Room'] == 'ONLINE', 'Modality'] = 'Online Course'
-rooms = ['LA106', 'LA109', 'LA201', 'SS207', 'LA213', 'LC218', 'LA110', 'SS211', 'SS225', 'LA103', 'SS224', 'LC217',
-         'LA211', 'LA202']
-for room in rooms:
-    lecture_enrollment_df.loc[lecture_enrollment_df['Room'] == room, 'Modality'] = 'Hybrid Course'
-lecture_enrollment_df.loc[lecture_enrollment_df['Max'] == 15, 'Modality'] = 'In Person'
-df_groupby_dept = lecture_enrollment_df.groupby(['Dept'])
-
-
-lecture_enrollment_df['FTES'] = lecture_enrollment_df['Size'] * (((lecture_enrollment_df['Hours']/18)*17.5)/525)
-lecture_enrollment_df.to_excel('Division_Enrollment.xlsx')
+# lecture_df = enrollment_df['Type'] == 'Lecture'
+# lecture_enrollment_df = enrollment_df[lecture_df]
+#
+# lecture_enrollment_df.loc[lecture_enrollment_df['Room'] == 'REMOTE', 'Modality'] = 'Remote Course'
+# lecture_enrollment_df.loc[lecture_enrollment_df['Room'] == 'ONLINE', 'Modality'] = 'Online Course'
+# rooms = ['LA106', 'LA109', 'LA201', 'SS207', 'LA213', 'LC218', 'LA110', 'SS211', 'SS225', 'LA103', 'SS224', 'LC217',
+#          'LA211', 'LA202']
+# for room in rooms:
+#     lecture_enrollment_df.loc[lecture_enrollment_df['Room'] == room, 'Modality'] = 'Hybrid Course'
+# lecture_enrollment_df.loc[lecture_enrollment_df['Max'] == 15, 'Modality'] = 'In Person'
+# df_groupby_dept = lecture_enrollment_df.groupby(['Dept'])
+#
+#
+# lecture_enrollment_df['FTES'] = lecture_enrollment_df['Size'] * (((lecture_enrollment_df['Hours']/18)*17.5)/525)
+# lecture_enrollment_df.to_excel('Division_Enrollment.xlsx')
 
 departments = ['AFRS', 'ASL', 'CHIN', 'COMM', 'ENGL', 'ESL', 'FREN', 'GERM', 'JAPN', 'READ', 'SPAN']
 for department in departments:
