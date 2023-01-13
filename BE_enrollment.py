@@ -115,15 +115,16 @@ class DataframeWork:
 
         # lecture_enrollment_df = enrollment_df[lecture_df]
 
-        lecture_enrollment_df.loc[lecture_enrollment_df['Modality'] == 'Hybrid Course', 'Room'] = 'Hybrid'
-        lecture_enrollment_df.loc[lecture_enrollment_df['Room'] == 'ONLINE', 'Modality'] = 'Online Course'
-        rooms = ['LA106', 'LA109', 'LA201', 'SS207', 'LA213', 'LC218', 'LA110', 'SS211', 'SS225', 'LA103', 'SS224',
+        lecture_enrollment_df.loc[lecture_enrollment_df['Room'] == 'REMOTE', 'Modality'] = 'Remote'
+        lecture_enrollment_df.loc[lecture_enrollment_df['Room'] == 'ONLINE', 'Modality'] = 'Online'
+        lecture_enrollment_df.loc[lecture_enrollment_df['Modality'] == 'Hybrid Course', 'Modality'] = 'Hybrid'
+
+        rooms = ['LC 22', 'BE109', 'BE106', 'BE119', 'BE116', 'BE111', 'BE121', 'LA110', 'SS211', 'SS225', 'LA103', 'SS224',
                   'LC217','LA211', 'LA202', 'LA209', 'LA210', 'LA205', 'LA212', 'LA204', 'SS214', 'LA212', 'SS136', 'LC213',
                  'LA203', 'FA134', 'LM20*', 'FA133', 'SS136', 'BELF*', 'MAYF*', 'AHS *', 'LC134', 'SPSM*', 'WHS *', 'NHS*',
-                 'STPI*', 'DOWN*', 'LA104', 'MP209', 'SS137', 'SS212', 'SS213', 'WARR*', 'AHS*', 'WHS*']
-
+                 'STPI*', 'DOWN*', 'LA104', 'MP209', 'SS312', 'SS140', 'SS138', 'WARR*', 'AHS*', 'WHS*']
         for room in rooms:
-            lecture_enrollment_df.loc[lecture_enrollment_df['Room'] == room, 'Room'] = 'In Person'
+            lecture_enrollment_df.loc[lecture_enrollment_df['Room'] == room, 'Modality'] = 'In Person'
 
         lecture_enrollment_df['FTES'] = lecture_enrollment_df['Size'] * (
                     ((lecture_enrollment_df['Hours'] / 18) * 17.5) / 525)
@@ -165,6 +166,10 @@ class DataframeWork:
             elif 'Nine Week A7 T,Th Session' \
                     in lecture_enrollment_df.loc[i, 'Session']:
                     lecture_enrollment_df.loc[i, 'Session'] = '9A'
+            elif 'Nine Week A4 Thursday Session (1/12/2023 - 3/9/2023)' \
+                    in lecture_enrollment_df.loc[i, 'Session']:
+                    lecture_enrollment_df.loc[i, 'Session'] = '9A'
+
             elif 'Nine Week B M-F Session' \
                     in lecture_enrollment_df.loc[i, 'Session']:
                 lecture_enrollment_df.loc[i,'Session'] = '9B'
@@ -192,8 +197,8 @@ class DataframeWork:
             lecture_enrollment_df.to_csv('Fall_Division_Enrollment.csv')
 
         else:
-            lecture_enrollment_df.to_csv('C:/Users/fmixson/Desktop/Dashboard_files/Spring_Division_Enrollment.csv')
-            lecture_enrollment_df.to_csv('Spring_Division_Enrollment.csv')
+            lecture_enrollment_df.to_csv('C:/Users/fmixson/Desktop/Dashboard_files/Business_Ed_Spring_Division_Enrollment.csv')
+            lecture_enrollment_df.to_csv('Business_Ed_Spring_Division_Enrollment.csv')
             lecture_enrollment_df.to_excel('Business_Ed_Spring_Division_Enrollment.xlsx')
         # grp = lecture_enrollment_df.get_group('Room')
         # divModalities = lecture_enrollment_df.groupby(['Room'])['Size', 'Max'].agg(['count', 'sum'])
@@ -264,7 +269,7 @@ for semester in semesters:
         page_source = driver.page_source
         soup = BeautifulSoup(page_source, 'lxml')
         page_loading = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, 'divisions')))
-        semester = driver.find_element(By.XPATH, 'html/body/form/p[1]/label[2]/input').click()
+        # semester = driver.find_element(By.XPATH, 'html/body/form/p[1]/label[2]/input').click()
         page_loading = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, 'divisions')))
         semester = driver.find_element(By.XPATH, 'html/body/form/p[1]/label[1]/input').click()
         check_all = driver.find_element(By.XPATH, '/html/body/form/table[1]/tbody/tr[1]/td[1]/label/input').click()

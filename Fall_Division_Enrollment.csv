@@ -1,0 +1,348 @@
+,index,Dept,Course,Session,Class,Start,End,Days,Room,Size,Max,Wait,Cap,Seats,WaitAv,Status,Instructor,Type,Hours,Books,Modality,FTES,Potential FTEF,FTEF,Efficiency
+0,0,ASL,ASL 110,18,24566,8:00am,9:50am,Tu Th,In Person,20,32,0,20,12,,Contact Instructor,"Delao, J",Lecture,72,Books,,2.666666667,4.266666667,0.266666667,10
+1,2,ASL,ASL 110,18,24568,,,,ONLINE,29,32,0,20,3,,Contact Instructor,"Michelotti, A",Lecture,72,Books,Online Course,3.866666667,4.266666667,0.266666667,14.5
+2,4,ASL,ASL 110,18,24570,,,,ONLINE,26,32,0,20,6,,Contact Instructor,"Hall, C",Lecture,72,Books,Online Course,3.466666667,4.266666667,0.266666667,13
+3,6,ASL,ASL 110,18,24572,8:00am,9:50am,M W,REMOTE,24,32,0,20,8,,Contact Instructor,"Delao, J",Lecture,72,Books,,3.2,4.266666667,0.266666667,12
+4,8,ASL,ASL 110,18,24574,,,,ONLINE,25,32,0,20,7,,Contact Instructor,"Hall, C",Lecture,72,Books,Online Course,3.333333333,4.266666667,0.266666667,12.5
+5,10,ASL,ASL 110,18,24576,4:00pm,5:50pm,M W,In Person,32,32,0,20,0,20,Wait List,"Morford, V",Lecture,72,Books,,4.266666667,4.266666667,0.266666667,16
+6,12,ASL,ASL 110,18,24578,,,,ONLINE,25,32,0,20,7,,Contact Instructor,"Harper-Johnson, P",Lecture,72,Books,Online Course,3.333333333,4.266666667,0.266666667,12.5
+7,14,ASL,ASL 110,18,24580,10:00am,11:50am,Tu,Hybrid,23,32,0,20,9,,Contact Instructor,"Hall, C",Lecture,72,Books,Hybrid Course,3.066666667,4.266666667,0.266666667,11.5
+8,16,ASL,ASL 110,18,24582,,,,ONLINE,27,32,0,20,5,,Contact Instructor,"Morford, V",Lecture,72,Books,Online Course,3.6,4.266666667,0.266666667,13.5
+9,18,ASL,ASL 110,18,26297,,,,ONLINE,24,32,0,20,8,,Contact Instructor,"Green, T",Lecture,72,Books,Online Course,3.2,4.266666667,0.266666667,12
+10,20,ASL,ASL 111,18,24584,5:00pm,6:50pm,Tu Th,REMOTE,11,32,0,20,21,,Contact Instructor,"Michelotti, A",Lecture,72,Books,,1.466666667,4.266666667,0.266666667,5.5
+11,22,ASL,ASL 111,18,24586,11:00am,12:50pm,M W,In Person,13,32,0,20,19,,Contact Instructor,"Harper-Johnson, P",Lecture,72,Books,,1.733333333,4.266666667,0.266666667,6.5
+12,24,ASL,ASL 111,18,30400,,,,ONLINE,22,32,0,20,10,,Contact Instructor,"Hall, C",Lecture,72,Books,Online Course,2.933333333,4.266666667,0.266666667,11
+13,26,ASL,ASL 210,18,24588,,,,ONLINE,10,32,0,20,22,,Contact Instructor,"Gough, T",Lecture,72,Books,Online Course,1.333333333,4.266666667,0.266666667,5
+14,28,ASL,ASL 210,15A,32409,7:35am,9:25am,M Tu F,In Person,20,0,0,0,0,,Closed,"Perez, L",Lecture,72,Books,,2.666666667,0,0.266666667,10
+15,30,ASL,ASL 210,15B,32396,8:35am,9:55am,M Tu W Th,In Person,22,0,0,0,0,,Closed,"Stevenson, J",Lecture,72,Books,,2.933333333,0,0.266666667,11
+16,32,ASL,ASL 211,15B,30402,,,,ONLINE,10,32,0,20,22,,Contact Instructor,"Hall, C",Lecture,72,Books,Online Course,1.333333333,4.266666667,0.266666667,5
+17,34,ASL,ASL 220,18,30404,,,,ONLINE,21,32,0,20,11,,Contact Instructor,"Gough, T",Lecture,54,Books,Online Course,2.1,3.2,0.2,10.5
+18,35,CHIN,CHIN 101,18,22601,,,,ONLINE,18,30,0,20,12,,Contact Instructor,"Zhou, Y",Lecture,90,Books,Online Course,3,5,0.333333333,9
+19,37,CHIN,CHIN 101,15B,30844,,,,ONLINE,25,30,0,20,5,,Contact Instructor,"Zhou, Y",Lecture,90,Books,Online Course,4.166666667,5,0.333333333,12.5
+20,39,CHIN,CHIN 102,18,23483,,,,ONLINE,11,30,0,20,19,,Contact Instructor,"Zhou, Y",Lecture,90,Books,Online Course,1.833333333,5,0.333333333,5.5
+21,41,CHIN,CHIN 201,18,27077,4:00pm,6:15pm,Th,REMOTE,10,25,0,20,10,,Contact Instructor,"Zhou, Y",Lecture,90,Books,Combined,1.666666667,4.166666667,0.333333333,5
+22,43,CHIN,CHIN 202,18,27079,4:00pm,6:15pm,Th,REMOTE,5,25,0,20,10,,Contact Instructor,"Zhou, Y",Lecture,90,Books,Combined,0.833333333,4.166666667,0.333333333,2.5
+23,45,COMM,COMM 60,18,29593,7:00pm,9:45pm,M,In Person,11,30,0,20,19,,Contact Instructor,"Forsythe, C",Lecture,54,Books,,1.1,3,0.2,5.5
+24,46,COMM,COMM 100,18,26984,8:00am,9:15am,M W,In Person,31,31,0,20,0,20,Wait List,"Arvilla Bohmer, E",Lecture,54,Books,,3.1,3.1,0.2,15.5
+25,47,COMM,COMM 100,18,20574,11:00am,12:15pm,M W,In Person,31,31,0,20,0,20,Wait List,"Montenegro, D",Lecture,54,Books,,3.1,3.1,0.2,15.5
+26,48,COMM,COMM 100,18,20580,2:00pm,3:15pm,M W,In Person,31,31,0,20,0,20,Wait List,"Morones, D",Lecture,54,Books,,3.1,3.1,0.2,15.5
+27,49,COMM,COMM 100,18,22279,3:30pm,4:45pm,Tu Th,In Person,32,31,0,20,0,20,Wait List,"Ayala, E",Lecture,54,Books,,3.2,3.1,0.2,16
+28,50,COMM,COMM 100,18,27082,7:00pm,9:50pm,M,REMOTE,27,31,0,20,4,,Contact Instructor,"Breit, C",Lecture,54,Books,,2.7,3.1,0.2,13.5
+29,51,COMM,COMM 100,18,26538,5:30pm,6:45pm,M W,REMOTE,25,31,0,20,6,,Contact Instructor,"Breit, C",Lecture,54,Books,,2.5,3.1,0.2,12.5
+30,52,COMM,COMM 100,18,26507,6:00pm,8:45pm,Tu,In Person,20,31,0,20,11,,Contact Instructor,"Gamble, M",Lecture,54,Books,,2,3.1,0.2,10
+31,53,COMM,COMM 100,18,26518,,,,ONLINE,26,31,0,20,5,,Contact Instructor,"Nia, H",Lecture,54,Books,Online Course,2.6,3.1,0.2,13
+32,54,COMM,COMM 100,18,27305,,,,ONLINE,23,31,0,20,8,,Contact Instructor,"Wagner, H",Lecture,54,Books,Online Course,2.3,3.1,0.2,11.5
+33,55,COMM,COMM 100,18,27451,,,,ONLINE,31,31,0,20,0,20,Wait List,"Forsythe, C",Lecture,54,Books,Online Course,3.1,3.1,0.2,15.5
+34,56,COMM,COMM 100,18,27469,,,,ONLINE,28,31,0,20,3,,Contact Instructor,"Lavariere, C",Lecture,54,Books,Online Course,2.8,3.1,0.2,14
+35,57,COMM,COMM 100,18,27918,,,,ONLINE,21,31,0,20,10,,Contact Instructor,"Trickett, D",Lecture,54,Books,Online Course,2.1,3.1,0.2,10.5
+36,58,COMM,COMM 100,18,29246,,,,ONLINE,33,31,0,20,0,20,Wait List,"Escamilla, R",Lecture,54,Books,Online Course,3.3,3.1,0.2,16.5
+37,59,COMM,COMM 100,18,29632,,,,ONLINE,30,31,0,20,1,,Contact Instructor,"Lavariere, C",Lecture,54,Books,Online Course,3,3.1,0.2,15
+38,60,COMM,COMM 100,9A,21786,,,,ONLINE,30,31,0,20,1,,Contact Instructor,"Perrone, T",Lecture,54,Books,Online Course,3,3.1,0.2,15
+39,61,COMM,COMM 100,9A,20887,9:30am,10:45am,Tu Th,Hybrid,21,31,0,20,10,,Contact Instructor,"Lavariere, C",Lecture,54,Books,Hybrid Course,2.1,3.1,0.2,10.5
+40,62,COMM,COMM 100,6,30696,,,,ONLINE,29,31,0,20,2,,Contact Instructor,"Acosta-Licea, J",Lecture,54,Books,Online Course,2.9,3.1,0.2,14.5
+41,63,COMM,COMM 100,15B,20571,11:00am,12:30pm,Tu Th,In Person,29,31,0,20,2,20,Wait List,"Toomey, A",Lecture,54,Books,,2.9,3.1,0.2,14.5
+42,64,COMM,COMM 100,15B,30190,,,,ONLINE,28,31,0,20,3,,Contact Instructor,"Wagner, H",Lecture,54,Books,Online Course,2.8,3.1,0.2,14
+43,65,COMM,COMM 100,15B,20578,8:00am,9:30am,Tu Th,In Person,26,31,0,20,5,,Contact Instructor,"Bracamontes, A",Lecture,54,Books,,2.6,3.1,0.2,13
+44,66,COMM,COMM 100,15B,20579,9:30am,11:00am,Tu Th,In Person,31,31,0,20,0,20,Wait List,"Bracamontes, A",Lecture,54,Books,,3.1,3.1,0.2,15.5
+45,67,COMM,COMM 100,15B,21656,,,,ONLINE,30,31,0,20,1,20,Wait List,"Toomey, A",Lecture,54,Books,Online Course,3,3.1,0.2,15
+46,68,COMM,COMM 100,15B,30191,,,,ONLINE,22,31,0,20,9,20,Wait List,"Carrell, K",Lecture,54,Books,Online Course,2.2,3.1,0.2,11
+47,69,COMM,COMM 100,15B,25973,,,,ONLINE,27,31,0,20,4,,Contact Instructor,"Fiori, K",Lecture,54,Books,Online Course,2.7,3.1,0.2,13.5
+48,70,COMM,COMM 100,15B,27468,9:30am,11:00am,M W,In Person,30,31,0,20,1,,Contact Instructor,"Hanniff, B",Lecture,54,Books,,3,3.1,0.2,15
+49,71,COMM,COMM 100,15B,27917,12:30pm,2:00pm,M W,In Person,27,31,0,20,4,,Contact Instructor,"Hanniff, B",Lecture,54,Books,,2.7,3.1,0.2,13.5
+50,72,COMM,COMM 100,15B,29243,,,,ONLINE,30,31,0,20,1,20,Wait List,"Nia, H",Lecture,54,Books,Online Course,3,3.1,0.2,15
+51,73,COMM,COMM 100,15B,29244,,,,ONLINE,31,31,0,20,0,20,Wait List,"Hanniff, B",Lecture,54,Books,Online Course,3.1,3.1,0.2,15.5
+52,74,COMM,COMM 100,15B,29352,,,,ONLINE,27,31,0,20,4,,Contact Instructor,"Nia, H",Lecture,54,Books,Online Course,2.7,3.1,0.2,13.5
+53,75,COMM,COMM 100,15B,29633,,,,ONLINE,30,31,0,20,1,20,Wait List,"Lavariere, C",Lecture,54,Books,Online Course,3,3.1,0.2,15
+54,76,COMM,COMM 100,15B,32426,12:30pm,2:00pm,Tu Th,In Person,30,31,0,10,1,,Contact Instructor,"Bracamontes, A",Lecture,54,Books,,3,3.1,0.2,15
+55,77,COMM,COMM 100,6,30697,,,,ONLINE,23,31,0,20,8,20,Wait List,"Rosenfeld, K",Lecture,54,Books,Online Course,2.3,3.1,0.2,11.5
+56,78,COMM,COMM 100,6,24079,,,,ONLINE,31,31,0,20,0,20,Wait List,"Acosta-Licea, J",Lecture,54,Books,Online Course,3.1,3.1,0.2,15.5
+57,79,COMM,COMM 100,9B,30189,9:30am,10:45am,Tu Th,Hybrid,29,31,0,20,2,20,Wait List,"Lavariere, C",Lecture,54,Books,Hybrid Course,2.9,3.1,0.2,14.5
+58,80,COMM,COMM 100,9B,31343,,,,ONLINE,27,31,0,20,4,20,Wait List,"Navarro, M",Lecture,54,Books,Online Course,2.7,3.1,0.2,13.5
+59,81,COMM,COMM 100,9B,29245,12:30pm,1:45pm,Tu Th,Hybrid,25,31,0,20,6,20,Wait List,"Perrone, T",Lecture,54,Books,Hybrid Course,2.5,3.1,0.2,12.5
+60,82,COMM,COMM 100,6,30895,,,,ONLINE,28,31,11,20,3,9,Wait List,"Navarro, M",Lecture,54,Books,Online Course,2.8,3.1,0.2,14
+61,83,COMM,COMM 100,6,30698,,,,ONLINE,31,31,12,20,0,8,Wait List,"Acosta-Licea, J",Lecture,54,Books,Online Course,3.1,3.1,0.2,15.5
+62,84,COMM,COMM 103,18,26988,,,,ONLINE,21,25,0,20,4,,Contact Instructor,"Ragg IV, F",Lecture,54,Books,Online Course,2.1,2.5,0.2,10.5
+63,85,COMM,COMM 103,18,22149,8:00am,9:15am,M W,In Person,22,25,0,20,3,,Contact Instructor,"Reotutar, M",Lecture,54,Books,,2.2,2.5,0.2,11
+64,86,COMM,COMM 103,18,21658,11:00am,12:15pm,Tu Th,In Person,22,25,0,20,3,,Contact Instructor,"Aguirre, S",Lecture,54,Books,,2.2,2.5,0.2,11
+65,87,COMM,COMM 103,9A,32411,,,,ONLINE,18,25,0,10,7,,Contact Instructor,"Matthews, N",Lecture,54,Books,Online Course,1.8,2.5,0.2,9
+66,88,COMM,COMM 103,15B,20590,12:30pm,2:00pm,Tu Th,In Person,13,25,0,20,12,,Contact Instructor,"Trickett, D",Lecture,54,Books,,1.3,2.5,0.2,6.5
+67,89,COMM,COMM 103,9B,24624,,,,ONLINE,22,25,0,20,3,20,Wait List,"Ragg IV, F",Lecture,54,Books,Online Course,2.2,2.5,0.2,11
+68,90,COMM,COMM 110,9A,25632,,,,ONLINE,26,31,0,20,5,,Contact Instructor,"Hoppe-Nagao, A",Lecture,54,Books,Online Course,2.6,3.1,0.2,13
+69,91,COMM,COMM 110,15B,25057,9:30am,11:00am,Tu Th,In Person,8,31,0,20,23,,Contact Instructor,"Toomey, A",Lecture,54,Books,,0.8,3.1,0.2,4
+70,92,COMM,COMM 110,9B,25633,,,,ONLINE,31,31,0,20,0,20,Wait List,"Hoppe-Nagao, A",Lecture,54,Books,Online Course,3.1,3.1,0.2,15.5
+71,93,COMM,COMM 115,9A,29249,,,,ONLINE,17,30,0,20,8,,Contact Instructor,"Rosenfeld, K",Lecture,54,Books,Online Course,1.7,3,0.2,8.5
+72,94,COMM,COMM 115,9B,32060,,,,ONLINE,17,30,0,20,4,,Contact Instructor,"Rosenfeld, K",Lecture,54,Books,Online Course,1.7,3,0.2,8.5
+73,95,COMM,COMM 120,18,21864,9:30am,10:45am,M W,In Person,21,31,0,20,10,,Contact Instructor,"Arvilla Bohmer, E",Lecture,54,Books,,2.1,3.1,0.2,10.5
+74,96,COMM,COMM 120,18,25059,9:30am,10:45am,Tu Th,In Person,16,31,0,20,15,,Contact Instructor,"Sherwood, J",Lecture,54,Books,,1.6,3.1,0.2,8
+75,97,COMM,COMM 120,9A,30891,,,,ONLINE,21,31,0,20,10,,Contact Instructor,"Yee-Jung, K",Lecture,54,Books,Online Course,2.1,3.1,0.2,10.5
+76,98,COMM,COMM 120,15B,20582,,,,ONLINE,30,31,0,20,1,,Contact Instructor,"Hanniff, B",Lecture,54,Books,Online Course,3,3.1,0.2,15
+77,99,COMM,COMM 120,15B,20583,,,,ONLINE,30,31,0,20,1,,Contact Instructor,"Hanniff, B",Lecture,54,Books,Online Course,3,3.1,0.2,15
+78,100,COMM,COMM 120,15B,27083,12:30pm,2:00pm,Tu Th,In Person,18,31,0,20,13,,Contact Instructor,"Miller, M",Lecture,54,Books,,1.8,3.1,0.2,9
+79,101,COMM,COMM 120,15B,29251,11:00am,12:30pm,M W,In Person,17,0,0,0,0,,Closed,"Hanniff, B",Lecture,54,Books,,1.7,0,0.2,8.5
+80,102,COMM,COMM 120,9B,30193,8:00am,9:15am,Tu Th,Hybrid,24,31,0,20,7,20,Wait List,"Sherwood, J",Lecture,54,Books,Hybrid Course,2.4,3.1,0.2,12
+81,103,COMM,COMM 120,9B,23936,,,,ONLINE,22,31,0,20,9,20,Wait List,"Wagner, H",Lecture,54,Books,Online Course,2.2,3.1,0.2,11
+82,104,COMM,COMM 125,18,23507,,,,ONLINE,23,30,0,20,7,,Contact Instructor,"Morones, D",Lecture,54,Books,Online Course,2.3,3,0.2,11.5
+83,105,COMM,COMM 125,18,27919,,,,ONLINE,24,30,0,20,6,,Contact Instructor,"Navarro, M",Lecture,54,Books,Online Course,2.4,3,0.2,12
+84,106,COMM,COMM 130,18,21866,,,,ONLINE,23,30,0,20,7,,Contact Instructor,"Carrell, K",Lecture,54,Books,Online Course,2.3,3,0.2,11.5
+85,107,COMM,COMM 130,18,20584,9:30am,10:45am,M W,In Person,29,30,0,20,1,,Contact Instructor,"Reotutar, M",Lecture,54,Books,,2.9,3,0.2,14.5
+86,108,COMM,COMM 130,18,31288,11:00am,12:15pm,Tu Th,In Person,27,30,0,20,3,,Contact Instructor,"Carrell, K",Lecture,54,Books,,2.7,3,0.2,13.5
+87,109,COMM,COMM 130,18,20586,11:00am,12:15pm,M W,In Person,28,30,0,20,2,,Contact Instructor,"Arvilla Bohmer, E",Lecture,54,Books,,2.8,3,0.2,14
+88,110,COMM,COMM 130,18,21463,,,,ONLINE,28,30,0,20,2,,Contact Instructor,"Forsythe, C",Lecture,54,Books,Online Course,2.8,3,0.2,14
+89,111,COMM,COMM 130,18,25976,,,,ONLINE,23,30,0,20,7,,Contact Instructor,"Eldridge, A",Lecture,54,Books,Online Course,2.3,3,0.2,11.5
+90,112,COMM,COMM 130,18,28407,,,,ONLINE,30,30,0,20,0,20,Wait List,"Ayala, E",Lecture,54,Books,Online Course,3,3,0.2,15
+91,113,COMM,COMM 130,18,29252,,,,ONLINE,25,30,0,20,5,,Contact Instructor,"Eldridge, A",Lecture,54,Books,Online Course,2.5,3,0.2,12.5
+92,114,COMM,COMM 130,9A,30194,,,,ONLINE,30,30,0,20,0,20,Wait List,"Escamilla, R",Lecture,54,Books,Online Course,3,3,0.2,15
+93,115,COMM,COMM 130,15B,23938,3:30pm,4:45pm,M W,In Person,27,30,0,20,3,,Contact Instructor,"Montenegro, D",Lecture,54,Books,,2.7,3,0.2,13.5
+94,116,COMM,COMM 130,15B,23937,2:00pm,3:15pm,Tu Th,In Person,27,30,0,20,3,,Contact Instructor,"Ayala, E",Lecture,54,Books,,2.7,3,0.2,13.5
+95,117,COMM,COMM 130,15B,24619,1:00pm,2:30pm,M W,In Person,26,30,0,20,4,,Contact Instructor,"Montenegro, D",Lecture,54,Books,,2.6,3,0.2,13
+96,118,COMM,COMM 130,9B,29254,,,,ONLINE,30,30,0,20,0,20,Wait List,"Escamilla, R",Lecture,54,Books,Online Course,3,3,0.2,15
+97,119,COMM,COMM 132,18,21657,11:00am,12:15pm,Tu Th,In Person,16,30,0,20,14,,Contact Instructor,"Trickett, D",Lecture,54,Books,,1.6,3,0.2,8
+98,120,COMM,COMM 132,18,26315,,,,ONLINE,26,30,0,20,4,,Contact Instructor,"Judy, R",Lecture,54,Books,Online Course,2.6,3,0.2,13
+99,121,COMM,COMM 140,9B,32530,9:30am,11:00am,Tu,LA105,11,30,0,20,19,,Contact Instructor,"Aguirre, S",Lecture,54,Books,,1.1,3,0.2,5.5
+100,122,COMM,COMM 231,Open,27190,4:00pm,6:00pm,Tu Th,In Person,11,20,0,20,5,,Contact Instructor,"Aguirre, S",Lecture,18,Books,Hybrid Course Combined,0.366666667,0.666666667,0.066666667,5.5
+101,123,COMM,COMM 232,Open,27191,4:00pm,6:00pm,Tu Th,In Person,4,20,0,20,5,,Contact Instructor,"Aguirre, S",Lecture,36,Books,Hybrid Course Combined,0.266666667,1.333333333,0.133333333,2
+102,124,COMM,COMM 233,Open,30196,,,,,0,20,0,20,5,,Cancelled,STAFF,Lecture,54,Books,Hybrid Course Combined,0,2,0.2,0
+103,125,ENGL,ENGL 100,18,20185,7:00am,8:50am,M W,REMOTE,27,30,0,20,3,20,Wait List,"Russell, C",Lecture,72,Books,,3.6,4,0.266666667,13.5
+104,126,ENGL,ENGL 100,18,20191,9:00am,10:50am,M W,In Person,30,30,0,20,0,20,Wait List,"Jalloh, K",Lecture,72,Books,,4,4,0.266666667,15
+105,127,ENGL,ENGL 100,18,20192,9:00am,10:50am,Tu Th,In Person,32,30,0,20,0,20,Wait List,"Crum, A",Lecture,72,Books,,4.266666667,4,0.266666667,16
+106,128,ENGL,ENGL 100,18,30137,11:00am,12:50pm,M,Hybrid,29,30,0,20,1,20,Wait List,"Arambula, M",Lecture,72,Books,Hybrid Course,3.866666667,4,0.266666667,14.5
+107,129,ENGL,ENGL 100,18,20194,7:00am,8:50am,Tu Th,In Person,30,30,0,20,0,20,Wait List,"Crum, A",Lecture,72,Books,,4,4,0.266666667,15
+108,130,ENGL,ENGL 100,18,20196,9:00am,10:50am,M W,In Person,30,30,0,20,0,20,Wait List,"McGaughey-Gilreath, C",Lecture,72,Books,,4,4,0.266666667,15
+109,131,ENGL,ENGL 100,18,30157,11:00am,12:50pm,M W,In Person,31,30,0,20,0,20,Wait List,"McGaughey-Gilreath, C",Lecture,72,Books,,4.133333333,4,0.266666667,15.5
+110,132,ENGL,ENGL 100,18,20205,11:00am,12:50pm,Tu Th,In Person,33,30,0,20,0,20,Wait List,"Mata, C",Lecture,72,Books,,4.4,4,0.266666667,16.5
+111,133,ENGL,ENGL 100,18,20206,1:00pm,2:50pm,M W,In Person,29,30,0,20,1,20,Wait List,"Miranda, V",Lecture,72,Books,,3.866666667,4,0.266666667,14.5
+112,134,ENGL,ENGL 100,18,20208,1:00pm,2:50pm,Tu Th,In Person,33,30,0,20,0,20,Wait List,"Mata, C",Lecture,72,Books,,4.4,4,0.266666667,16.5
+113,135,ENGL,ENGL 100,18,20688,7:00am,8:50am,M,Hybrid,26,30,0,20,4,,Contact Instructor,"Sartin, N",Lecture,72,Books,Hybrid Course,3.466666667,4,0.266666667,13
+114,136,ENGL,ENGL 100,18,20689,9:00am,10:50am,M,Hybrid,30,30,0,20,0,20,Wait List,"Orr, A",Lecture,72,Books,Hybrid Course,4,4,0.266666667,15
+115,137,ENGL,ENGL 100,18,20690,9:00am,10:50am,W,Hybrid,30,30,0,20,0,20,Wait List,"Orr, A",Lecture,72,Books,Hybrid Course,4,4,0.266666667,15
+116,138,ENGL,ENGL 100,18,22150,9:00am,10:50am,M W,In Person,29,30,0,20,1,,Contact Instructor,"Stanfield, S",Lecture,72,Books,,3.866666667,4,0.266666667,14.5
+117,139,ENGL,ENGL 100,18,22074,9:00am,10:50am,Tu Th,In Person,29,30,0,20,1,20,Wait List,"Dongell, R",Lecture,72,Books,,3.866666667,4,0.266666667,14.5
+118,140,ENGL,ENGL 100,18,22345,11:00am,12:50pm,M W,In Person,30,30,0,20,0,20,Wait List,"Whitson, E",Lecture,72,Books,,4,4,0.266666667,15
+119,141,ENGL,ENGL 100,18,22346,11:00am,12:50pm,W,Hybrid,30,30,0,20,0,20,Wait List,"Ludvigsen, L",Lecture,72,Books,Hybrid Course,4,4,0.266666667,15
+120,142,ENGL,ENGL 100,18,24537,11:00am,12:50pm,Tu Th,In Person,29,30,0,20,1,,Contact Instructor,"Dongell, R",Lecture,72,Books,,3.866666667,4,0.266666667,14.5
+121,143,ENGL,ENGL 100,18,30090,1:00pm,2:50pm,M W,In Person,32,30,0,20,0,20,Wait List,"Arambula, M",Lecture,72,Books,,4.266666667,4,0.266666667,16
+122,144,ENGL,ENGL 100,18,26396,1:00pm,2:50pm,Tu Th,In Person,30,30,0,20,0,20,Wait List,"Garcia, J",Lecture,72,Books,,4,4,0.266666667,15
+123,145,ENGL,ENGL 100,18,20197,9:00am,10:50am,Tu,Hybrid,17,30,0,20,13,,Contact Instructor,"Lamas, C",Lecture,72,Books,Hybrid Course,2.266666667,4,0.266666667,8.5
+124,146,ENGL,ENGL 100,18,20198,9:00am,10:50am,Th,Hybrid,30,30,0,20,0,20,Wait List,"Whynaught, J",Lecture,72,Books,Hybrid Course,4,4,0.266666667,15
+125,147,ENGL,ENGL 100,18,23986,11:00am,12:50pm,Tu Th,In Person,27,30,0,20,3,,Contact Instructor,"Blake, L",Lecture,72,Books,,3.6,4,0.266666667,13.5
+126,148,ENGL,ENGL 100,18,20201,7:00am,8:50am,Tu Th,REMOTE,28,30,0,20,2,20,Wait List,"Russell, C",Lecture,72,Books,,3.733333333,4,0.266666667,14
+127,149,ENGL,ENGL 100,18,20202,,,,ONLINE,31,30,0,20,0,20,Wait List,"Fagundes, M",Lecture,72,Books,Online Course,4.133333333,4,0.266666667,15.5
+128,150,ENGL,ENGL 100,18,,,,,,0,0,,,,,,"Hitch, R",Lecture,0,,,0,0,0,
+129,151,ENGL,ENGL 100,18,20203,3:00pm,4:50pm,M,Hybrid,29,30,0,20,1,,Contact Instructor,"Miranda, V",Lecture,72,Books,Hybrid Course,3.866666667,4,0.266666667,14.5
+130,152,ENGL,ENGL 100,18,27317,3:00pm,4:50pm,W,Hybrid,26,30,0,20,4,,Contact Instructor,"Nave, M",Lecture,72,Books,Hybrid Course,3.466666667,4,0.266666667,13
+131,153,ENGL,ENGL 100,18,27865,,,,ONLINE,29,30,0,20,1,20,Wait List,"Fagundes, M",Lecture,72,Books,Online Course,3.866666667,4,0.266666667,14.5
+132,154,ENGL,ENGL 100,18,,,,,,0,0,,,,,,"Vanciu, A",Lecture,0,,,0,0,0,
+133,155,ENGL,ENGL 100,18,26400,9:00am,12:50pm,F,In Person,29,30,0,20,1,,Contact Instructor,"Smith, S",Lecture,72,Books,,3.866666667,4,0.266666667,14.5
+134,156,ENGL,ENGL 100,18,32050,5:00pm,6:50pm,Tu,Hybrid,30,30,0,20,0,20,Wait List,"Stavast, J",Lecture,72,Books,Hybrid Course,4,4,0.266666667,15
+135,157,ENGL,ENGL 100,18,32051,11:00am,12:50pm,M W,In Person,31,30,0,20,0,20,Wait List,"Cagnolatti, D",Lecture,72,Books,,4.133333333,4,0.266666667,15.5
+136,158,ENGL,ENGL 100,18,32053,1:00pm,2:50pm,Tu,Hybrid,28,30,0,20,2,,Contact Instructor,"Whynaught, J",Lecture,72,Books,Hybrid Course,3.733333333,4,0.266666667,14
+137,159,ENGL,ENGL 100,18,30395,,,,ONLINE,27,30,0,20,3,20,Wait List,"Cole, E",Lecture,72,Books,Online Course,3.6,4,0.266666667,13.5
+138,160,ENGL,ENGL 100,18,30396,,,,ONLINE,27,30,0,20,3,,Contact Instructor,"McGaughey-Gilreath, C",Lecture,72,Books,Online Course,3.6,4,0.266666667,13.5
+139,161,ENGL,ENGL 100,18,32052,11:00am,12:50pm,M,Hybrid,27,30,0,20,3,,Contact Instructor,"Jalloh, K",Lecture,72,Books,Hybrid Course,3.6,4,0.266666667,13.5
+140,162,ENGL,ENGL 100,18,27869,5:00pm,6:50pm,Th,Hybrid,29,30,0,20,1,,Contact Instructor,"Stavast, J",Lecture,72,Books,Hybrid Course,3.866666667,4,0.266666667,14.5
+141,163,ENGL,ENGL 100,18,27873,11:00am,12:50pm,W,Hybrid,30,30,0,20,0,20,Wait List,"Walker, C",Lecture,72,Books,Hybrid Course,4,4,0.266666667,15
+142,164,ENGL,ENGL 100,18,27874,,,,ONLINE,25,30,0,20,5,,Contact Instructor,"McGaughey-Gilreath, C",Lecture,72,Books,Online Course,3.333333333,4,0.266666667,12.5
+143,165,ENGL,ENGL 100,18,27875,11:00am,12:50pm,Tu,Hybrid,31,30,0,20,0,20,Wait List,"Altebarmakian, T",Lecture,72,Books,Hybrid Course,4.133333333,4,0.266666667,15.5
+144,166,ENGL,ENGL 100,18,29171,,,,ONLINE,27,30,0,20,3,,Contact Instructor,"Sartin, N",Lecture,72,Books,Online Course,3.6,4,0.266666667,13.5
+145,167,ENGL,ENGL 100,18,29189,,,,ONLINE,30,30,0,20,0,20,Wait List,"Cole, E",Lecture,72,Books,Online Course,4,4,0.266666667,15
+146,168,ENGL,ENGL 100,18,27878,11:00am,12:50pm,Th,Hybrid,29,30,0,20,1,,Contact Instructor,"Altebarmakian, T",Lecture,72,Books,Hybrid Course,3.866666667,4,0.266666667,14.5
+147,169,ENGL,ENGL 100,18,29192,,,,ONLINE,29,30,0,20,1,,Contact Instructor,"Sartin, N",Lecture,72,Books,Online Course,3.866666667,4,0.266666667,14.5
+148,170,ENGL,ENGL 100,18,29199,1:00pm,2:50pm,M,Hybrid,27,30,0,20,3,20,Wait List,"Olague, M",Lecture,72,Books,Hybrid Course,3.6,4,0.266666667,13.5
+149,171,ENGL,ENGL 100,18,27885,1:00pm,2:50pm,W,Hybrid,29,30,0,20,1,20,Wait List,"Hulett, O",Lecture,72,Books,Hybrid Course,3.866666667,4,0.266666667,14.5
+150,172,ENGL,ENGL 100,18,29200,,,,ONLINE,30,30,0,20,0,20,Wait List,"Kayser, L",Lecture,72,Books,Online Course,4,4,0.266666667,15
+151,173,ENGL,ENGL 100,18,29202,,,,ONLINE,28,30,0,20,2,,Contact Instructor,"Kayser, L",Lecture,72,Books,Online Course,3.733333333,4,0.266666667,14
+152,174,ENGL,ENGL 100,18,27889,,,,ONLINE,26,30,0,20,4,,Contact Instructor,"Kayser, L",Lecture,72,Books,Online Course,3.466666667,4,0.266666667,13
+153,175,ENGL,ENGL 100,18,29206,,,,ONLINE,28,30,0,20,2,20,Wait List,"Fagundes, M",Lecture,72,Books,Online Course,3.733333333,4,0.266666667,14
+154,176,ENGL,ENGL 100,18,,,,,,0,0,,,,,,"Vanciu, A",Lecture,0,,,0,0,0,
+155,177,ENGL,ENGL 100,18,27893,,,,ONLINE,27,30,0,20,3,,Contact Instructor,"Cagnolatti, D",Lecture,72,Books,Online Course,3.6,4,0.266666667,13.5
+156,178,ENGL,ENGL 100,18,29211,7:00pm,8:50pm,M W,REMOTE,27,30,0,20,3,20,Wait List,"Bielik, N",Lecture,72,Books,,3.6,4,0.266666667,13.5
+157,179,ENGL,ENGL 100,18,27896,7:00pm,8:50pm,Tu Th,REMOTE,28,30,0,20,2,,Contact Instructor,"Bielik, N",Lecture,72,Books,,3.733333333,4,0.266666667,14
+158,180,ENGL,ENGL 100,15A,20204,9:30am,11:45am,M W,In Person,19,0,0,0,0,,Closed,"Mitchell-Lambert, J",Lecture,72,Books,,2.533333333,0,0.266666667,9.5
+159,181,ENGL,ENGL 100,15A,20193,8:00am,9:50am,M,LA105,21,10,0,20,0,20,Wait List,"Juntilla, T",Lecture,72,Books,(Honors Section) Hybrid Course,2.8,1.333333333,0.266666667,10.5
+160,182,ENGL,ENGL 100,15A,26399,8:00am,9:50am,W,LA105,18,10,0,20,0,20,Wait List,"Juntilla, T",Lecture,72,Books,(Honors Section) Hybrid Course,2.4,1.333333333,0.266666667,9
+161,183,ENGL,ENGL 100,15A,27907,1:00pm,3:15pm,Tu,Hybrid,28,30,0,20,2,,Contact Instructor,"Kessworth, B",Lecture,72,Books,Hybrid Course,3.733333333,4,0.266666667,14
+162,184,ENGL,ENGL 100,15A,27909,,,,ONLINE,24,30,0,20,6,,Contact Instructor,"Shah, N",Lecture,72,Books,Online Course,3.2,4,0.266666667,12
+163,185,ENGL,ENGL 100,6,30693,,,,ONLINE,30,30,0,20,0,20,Wait List,"Granillo, C",Lecture,72,Books,Online Course,4,4,0.266666667,15
+164,186,ENGL,ENGL 100,9A,30139,,,,ONLINE,27,30,0,20,3,20,Wait List,"Asis, B",Lecture,72,Books,Online Course,3.6,4,0.266666667,13.5
+165,187,ENGL,ENGL 100,9A,22452,,,,ONLINE,29,30,0,20,1,,Contact Instructor,"Sandoval, A",Lecture,72,Books,Online Course,3.866666667,4,0.266666667,14.5
+166,188,ENGL,ENGL 100,9A,24115,,,,ONLINE,27,30,0,20,3,,Contact Instructor,"Cheatham, T",Lecture,72,Books,Online Course,3.6,4,0.266666667,13.5
+167,189,ENGL,ENGL 100,9A,21781,,,,ONLINE,29,30,0,20,1,,Contact Instructor,"Danielo, J",Lecture,72,Books,Online Course,3.866666667,4,0.266666667,14.5
+168,190,ENGL,ENGL 100,15A,32297,8:30am,9:55am,Tu W F,In Person,31,0,0,0,0,,Closed,"Allen, L",Lecture,72,Books,,4.133333333,0,0.266666667,15.5
+169,191,ENGL,ENGL 100,16,32049,9:00am,1:20pm,Sa,In Person,28,30,0,20,2,,Contact Instructor,"Smith, S",Lecture,72,Books,,3.733333333,4,0.266666667,14
+170,192,ENGL,ENGL 100,15B,27316,1:00pm,3:00pm,W,REMOTE,27,30,0,20,3,,Contact Instructor,"Cristin, S",Lecture,72,Books,,3.6,4,0.266666667,13.5
+171,193,ENGL,ENGL 100,15B,27247,,,,ONLINE,29,30,0,20,1,20,Wait List,"Gil, N",Lecture,72,Books,Online Course,3.866666667,4,0.266666667,14.5
+172,194,ENGL,ENGL 100,15B,31516,9:00am,11:15am,M W,In Person,29,30,0,20,1,20,Wait List,"Asis, B",Lecture,72,Books,,3.866666667,4,0.266666667,14.5
+173,195,ENGL,ENGL 100,15B,24595,,,,ONLINE,25,30,0,20,5,,Contact Instructor,"Hitch, R",Lecture,72,Books,Online Course,3.333333333,4,0.266666667,12.5
+174,196,ENGL,ENGL 100,15B,30159,9:00am,11:15am,Tu Th,In Person,33,30,0,20,0,20,Wait List,"Cepeda, M",Lecture,72,Books,,4.4,4,0.266666667,16.5
+175,197,ENGL,ENGL 100,15B,31518,11:00am,1:15pm,Tu Th,In Person,27,30,0,20,3,,Contact Instructor,"Walsh, W",Lecture,72,Books,,3.6,4,0.266666667,13.5
+176,198,ENGL,ENGL 100,15B,25967,1:00pm,3:15pm,M W,In Person,32,30,0,20,0,20,Wait List,"Mitchell-Lambert, J",Lecture,72,Books,,4.266666667,4,0.266666667,16
+177,199,ENGL,ENGL 100,15B,31547,,,,ONLINE,27,30,0,20,3,20,Wait List,"Mitchell-Lambert, J",Lecture,72,Books,Online Course,3.6,4,0.266666667,13.5
+178,200,ENGL,ENGL 100,15B,23466,9:00am,11:15am,Tu,Hybrid,28,30,0,20,2,,Contact Instructor,"Leis, C",Lecture,72,Books,Hybrid Course,3.733333333,4,0.266666667,14
+179,201,ENGL,ENGL 100,15B,30392,9:00am,11:15am,Th,Hybrid,27,30,0,20,3,20,Wait List,"Leis, C",Lecture,72,Books,Hybrid Course,3.6,4,0.266666667,13.5
+180,202,ENGL,ENGL 100,15B,32294,,,,ONLINE,24,30,0,10,6,,Contact Instructor,"Shah, N",Lecture,72,Books,Online Course,3.2,4,0.266666667,12
+181,203,ENGL,ENGL 100,15B,32483,,,,ONLINE,29,30,0,20,1,,Contact Instructor,"Nishimura, M",Lecture,72,Books,Online Course,3.866666667,4,0.266666667,14.5
+182,204,ENGL,ENGL 100,15B,32484,,,,ONLINE,29,30,0,20,1,,Contact Instructor,"Nishimura, M",Lecture,72,Books,Online Course,3.866666667,4,0.266666667,14.5
+183,205,ENGL,ENGL 100,15B,32485,,,,ONLINE,28,30,0,20,2,,Contact Instructor,"Robles, A",Lecture,72,Books,Online Course,3.733333333,4,0.266666667,14
+184,206,ENGL,ENGL 100,15B,32486,,,,ONLINE,22,30,0,20,8,,Contact Instructor,"Avalos, B",Lecture,72,Books,Online Course,2.933333333,4,0.266666667,11
+185,207,ENGL,ENGL 100,15B,32487,,,,ONLINE,18,30,0,20,12,,Contact Instructor,"Avalos, B",Lecture,72,Books,Online Course,2.4,4,0.266666667,9
+186,208,ENGL,ENGL 100,15B,32516,,,,ONLINE,28,30,0,20,2,,Contact Instructor,"Morrison, A",Lecture,72,Books,Online Course,3.733333333,4,0.266666667,14
+187,209,ENGL,ENGL 100,15B,30397,1:00pm,3:15pm,Tu Th,In Person,26,30,0,20,4,20,Wait List,"Hulett, O",Lecture,72,Books,,3.466666667,4,0.266666667,13
+188,210,ENGL,ENGL 100,15B,32517,,,,ONLINE,27,30,0,20,3,,Contact Instructor,"Zamora, V",Lecture,72,Books,Online Course,3.6,4,0.266666667,13.5
+189,211,ENGL,ENGL 100,15B,32518,,,,ONLINE,29,30,0,20,1,20,Wait List,"Ali, J",Lecture,72,Books,Online Course,3.866666667,4,0.266666667,14.5
+190,212,ENGL,ENGL 100,15B,28236,3:00pm,5:00pm,Tu,Hybrid,30,30,0,20,0,20,Wait List,"Clifford, S",Lecture,72,Books,Hybrid Course,4,4,0.266666667,15
+191,213,ENGL,ENGL 100,15B,29438,,,,ONLINE,30,30,0,20,0,20,Wait List,"Quaas-Berryman, F",Lecture,72,Books,Online Course,4,4,0.266666667,15
+192,214,ENGL,ENGL 100,15B,30398,8:00am,10:00am,W,REMOTE,17,0,0,0,0,,Closed,"Reyes, A",Lecture,72,Books,,2.266666667,0,0.266666667,8.5
+193,215,ENGL,ENGL 100,15B,30645,,,,ONLINE,23,30,0,20,7,,Contact Instructor,"Quaas-Berryman, F",Lecture,72,Books,Online Course,3.066666667,4,0.266666667,11.5
+194,216,ENGL,ENGL 100,15B,30679,,,,ONLINE,27,30,0,20,3,,Contact Instructor,"Quaas-Berryman, F",Lecture,72,Books,Online Course,3.6,4,0.266666667,13.5
+195,217,ENGL,ENGL 100,15B,29746,,,,ONLINE,22,30,0,20,8,,Contact Instructor,"Quaas-Berryman, F",Lecture,72,Books,Online Course,2.933333333,4,0.266666667,11
+196,218,ENGL,ENGL 100,15B,27905,,,,ONLINE,21,30,0,20,9,20,Wait List,"Quaas-Berryman, F",Lecture,72,Books,Online Course,2.8,4,0.266666667,10.5
+197,219,ENGL,ENGL 100,15B,29793,3:00pm,5:00pm,Th,Hybrid,24,30,0,20,6,,Contact Instructor,"Clifford, S",Lecture,72,Books,Hybrid Course,3.2,4,0.266666667,12
+198,220,ENGL,ENGL 100,15B,30694,,,,ONLINE,23,30,0,20,7,20,Wait List,"Clifford, S",Lecture,72,Books,Online Course,3.066666667,4,0.266666667,11.5
+199,221,ENGL,ENGL 100,15B,29796,,,,ONLINE,25,30,0,20,5,,Contact Instructor,"Shah, N",Lecture,72,Books,Online Course,3.333333333,4,0.266666667,12.5
+200,222,ENGL,ENGL 100,15B,30695,,,,ONLINE,24,30,0,20,6,,Contact Instructor,"Shah, N",Lecture,72,Books,Online Course,3.2,4,0.266666667,12
+201,223,ENGL,ENGL 100,15B,30867,,,,ONLINE,29,30,0,20,1,20,Wait List,"Reeves, M",Lecture,72,Books,Online Course,3.866666667,4,0.266666667,14.5
+202,224,ENGL,ENGL 100,15B,30160,,,,ONLINE,30,30,0,20,0,20,Wait List,"Reeves, M",Lecture,72,Books,Online Course,4,4,0.266666667,15
+203,225,ENGL,ENGL 100,15B,30892,,,,ONLINE,29,30,0,20,1,20,Wait List,"Robles, A",Lecture,72,Books,Online Course,3.866666667,4,0.266666667,14.5
+204,226,ENGL,ENGL 100,15A,32295,8:00am,9:25am,Tu Th F,In Person,30,0,0,0,0,,Closed,"Whitson, E",Lecture,72,Books,,4,0,0.266666667,15
+205,227,ENGL,ENGL 100,15A,32296,8:30am,9:55am,Tu Th F,AHS *,30,0,0,0,0,,Closed,"Hiza, J",Lecture,72,Books,,4,0,0.266666667,15
+206,228,ENGL,ENGL 100,6,30692,9:00am,1:00pm,Sa,Hybrid,29,30,0,20,1,20,Wait List,"Palencia, M",Lecture,72,Books,Hybrid Course,3.866666667,4,0.266666667,14.5
+207,229,ENGL,ENGL 100,9B,30138,,,,ONLINE,27,30,0,20,3,20,Wait List,"Blake, L",Lecture,72,Books,Online Course,3.6,4,0.266666667,13.5
+208,230,ENGL,ENGL 100,9B,30140,,,,ONLINE,27,30,0,20,3,20,Wait List,"Sandoval, A",Lecture,72,Books,Online Course,3.6,4,0.266666667,13.5
+209,231,ENGL,ENGL 100,9B,25191,,,,ONLINE,35,30,0,20,0,20,Wait List,"Olague, M",Lecture,72,Books,Online Course,4.666666667,4,0.266666667,17.5
+210,232,ENGL,ENGL 100,9B,30158,,,,ONLINE,27,30,0,20,3,20,Wait List,"Danielo, J",Lecture,72,Books,Online Course,3.6,4,0.266666667,13.5
+211,233,ENGL,ENGL 100,9B,31517,11:00am,1:00pm,W,REMOTE,24,30,0,20,6,20,Wait List,"Reyes, A",Lecture,72,Books,(Learning Community),3.2,4,0.266666667,12
+212,234,ENGL,ENGL 100,9B,31685,,,,ONLINE,29,30,0,20,1,20,Wait List,"Ludvigsen, L",Lecture,72,Books,Online Course,3.866666667,4,0.266666667,14.5
+213,235,ENGL,ENGL 100,9B,30394,,,,ONLINE,29,30,0,20,1,20,Wait List,"Torres-Guimaraes, N",Lecture,72,Books,Online Course,3.866666667,4,0.266666667,14.5
+214,236,ENGL,ENGL 100,6,30691,9:00am,1:00pm,F,REMOTE,27,30,10,20,3,10,Wait List,"Granillo, C",Lecture,72,Books,,3.6,4,0.266666667,13.5
+215,237,ENGL,ENGL 100S,18,30091,9:00am,10:50am,M W,In Person,25,25,0,20,0,20,Wait List,"Hiza, J",Lecture,72,Books,,3.333333333,3.333333333,0.266666667,12.5
+216,239,ENGL,ENGL 100S,18,30095,9:00am,10:50am,Tu,In Person,30,0,0,0,0,,Closed,"Gardner, D",Lecture,72,Books,(PUENTE) Hybrid Course,4,0,0.266666667,15
+217,241,ENGL,ENGL 100S,18,30099,11:00am,12:50pm,M W,In Person,26,25,0,20,0,20,Wait List,"Nave, M",Lecture,72,Books,,3.466666667,3.333333333,0.266666667,13
+218,243,ENGL,ENGL 100S,18,30101,9:00am,10:50am,Th,In Person,28,0,0,0,0,,Closed,"Gardner, D",Lecture,72,Books,(PUENTE) Hybrid Course,3.733333333,0,0.266666667,14
+219,245,ENGL,ENGL 100S,18,30117,1:00pm,2:50pm,Tu Th,In Person,28,25,0,20,0,20,Wait List,"Olague, M",Lecture,72,Books,,3.733333333,3.333333333,0.266666667,14
+220,247,ENGL,ENGL 100S,15A,30150,1:00pm,2:50pm,Th,Hybrid,22,25,0,20,3,,Contact Instructor,"Cepeda, M",Lecture,72,Books,Hybrid Course,2.933333333,3.333333333,0.266666667,11
+221,249,ENGL,ENGL 100S,9A,30068,,,,ONLINE,20,25,0,20,5,,Contact Instructor,"Zamora, V",Lecture,72,Books,Online Course,2.666666667,3.333333333,0.266666667,10
+222,251,ENGL,ENGL 100S,9A,30125,,,,ONLINE,18,25,0,20,7,,Contact Instructor,"Gonzales, J",Lecture,72,Books,Online Course,2.4,3.333333333,0.266666667,9
+223,253,ENGL,ENGL 100S,9A,30684,,,,ONLINE,18,25,0,20,7,,Contact Instructor,"Gonzales, J",Lecture,72,Books,Online Course,2.4,3.333333333,0.266666667,9
+224,255,ENGL,ENGL 100S,15B,30070,,,,ONLINE,19,25,0,20,6,20,Wait List,"Serwin, L",Lecture,72,Books,Online Course,2.533333333,3.333333333,0.266666667,9.5
+225,257,ENGL,ENGL 100S,15B,31545,,,,ONLINE,17,25,0,20,8,,Contact Instructor,"Serwin, L",Lecture,72,Books,Online Course,2.266666667,3.333333333,0.266666667,8.5
+226,259,ENGL,ENGL 100S,15B,30086,,,,ONLINE,22,25,0,20,3,,Contact Instructor,"Hua, L",Lecture,72,Books,Online Course,2.933333333,3.333333333,0.266666667,11
+227,261,ENGL,ENGL 100S,15B,30093,,,,ONLINE,21,25,0,20,4,,Contact Instructor,"Hua, L",Lecture,72,Books,Online Course,2.8,3.333333333,0.266666667,10.5
+228,263,ENGL,ENGL 100S,15B,30109,9:00am,9:50am,M W,In Person,16,0,0,0,0,,Closed,"Palencia, M",Lecture,72,Books,Hybrid Course Leaders Involved in Creating Change,2.133333333,0,0.266666667,8
+229,265,ENGL,ENGL 100S,15B,30113,,,,ONLINE,20,25,0,20,5,20,Wait List,"Hua, L",Lecture,72,Books,Online Course,2.666666667,3.333333333,0.266666667,10
+230,267,ENGL,ENGL 100S,15B,32398,1:00pm,3:10pm,M W,In Person,29,0,0,0,0,,Closed,"Cagnolatti, D",Lecture,72,Books,,3.866666667,0,0.266666667,14.5
+231,269,ENGL,ENGL 100S,9B,30105,,,,ONLINE,21,25,0,20,4,20,Wait List,"Alvarez, L",Lecture,72,Books,Online Course,2.8,3.333333333,0.266666667,10.5
+232,271,ENGL,ENGL 102,18,24544,,,,ONLINE,32,35,0,20,3,,Contact Instructor,"Stanfield, S",Lecture,54,Books,Online Course,3.2,3.5,0.2,16
+233,272,ENGL,ENGL 102,18,29647,,,,ONLINE,33,35,0,20,2,,Contact Instructor,"Cole, E",Lecture,54,Books,Online Course,3.3,3.5,0.2,16.5
+234,273,ENGL,ENGL 102,15B,20210,11:00am,12:30pm,M W,Hybrid,30,35,0,20,5,,Contact Instructor,"Cole, E",Lecture,54,Books,Hybrid Course,3,3.5,0.2,15
+235,274,ENGL,ENGL 102,9B,24543,,,,ONLINE,31,35,0,20,4,20,Wait List,"Morrison, A",Lecture,54,Books,Online Course,3.1,3.5,0.2,15.5
+236,275,ENGL,ENGL 103,18,26407,,,,ONLINE,24,25,0,20,1,,Contact Instructor,"Gardner, D",Lecture,72,Books,Online Course,3.2,3.333333333,0.266666667,12
+237,276,ENGL,ENGL 103,18,20212,,,,ONLINE,24,25,0,20,1,,Contact Instructor,"Fagundes, M",Lecture,72,Books,Online Course,3.2,3.333333333,0.266666667,12
+238,277,ENGL,ENGL 103,18,,,,,,0,0,,,,,,"Watnik, W",Lecture,0,,,0,0,0,
+239,278,ENGL,ENGL 103,18,22347,9:00am,10:50am,M W,In Person,24,25,0,20,1,,Contact Instructor,"Amano-Tompkins, T",Lecture,72,Books,,3.2,3.333333333,0.266666667,12
+240,279,ENGL,ENGL 103,18,20213,9:00am,10:50am,Tu Th,In Person,23,25,0,20,2,,Contact Instructor,"Bran, B",Lecture,72,Books,,3.066666667,3.333333333,0.266666667,11.5
+241,280,ENGL,ENGL 103,18,22584,11:00am,12:50pm,Tu,Hybrid,20,25,0,20,5,,Contact Instructor,"Bran, B",Lecture,72,Books,Hybrid Course,2.666666667,3.333333333,0.266666667,10
+242,281,ENGL,ENGL 103,18,22585,,,,ONLINE,25,25,0,20,0,20,Wait List,"Watnik, W",Lecture,72,Books,Online Course,3.333333333,3.333333333,0.266666667,12.5
+243,282,ENGL,ENGL 103,18,31686,9:00am,12:50pm,F,In Person,22,25,0,20,3,,Contact Instructor,"Deon, L",Lecture,72,Books,,2.933333333,3.333333333,0.266666667,11
+244,283,ENGL,ENGL 103,18,32054,9:00am,11:50am,Sa,In Person,14,25,0,20,11,,Contact Instructor,"Gil, N",Lecture,72,Books,,1.866666667,3.333333333,0.266666667,7
+245,284,ENGL,ENGL 103,18,24545,,,,ONLINE,22,25,0,20,3,,Contact Instructor,"Lefebvre, L",Lecture,72,Books,Online Course,2.933333333,3.333333333,0.266666667,11
+246,285,ENGL,ENGL 103,18,21235,11:00am,12:50pm,Th,Hybrid,15,25,0,20,10,,Contact Instructor,"Tamayo, K",Lecture,72,Books,Hybrid Course,2,3.333333333,0.266666667,7.5
+247,286,ENGL,ENGL 103,18,21237,11:00am,12:50pm,Tu Th,In Person,24,25,0,20,1,,Contact Instructor,"Garcia, J",Lecture,72,Books,,3.2,3.333333333,0.266666667,12
+248,287,ENGL,ENGL 103,18,22066,,,,ONLINE,21,25,0,20,4,,Contact Instructor,"Lefebvre, L",Lecture,72,Books,Online Course,2.8,3.333333333,0.266666667,10.5
+249,288,ENGL,ENGL 103,18,24547,,,,Hybrid,0,25,0,20,25,,Cancelled,STAFF,Lecture,72,Books,Hybrid Course,0,3.333333333,0.266666667,0
+250,289,ENGL,ENGL 103,18,30156,,,,ONLINE,23,25,0,20,2,,Contact Instructor,"Walker, C",Lecture,72,Books,Online Course,3.066666667,3.333333333,0.266666667,11.5
+251,290,ENGL,ENGL 103,18,25971,7:00pm,8:50pm,M W,REMOTE,16,25,0,20,9,,Contact Instructor,"Crozier, J",Lecture,72,Books,,2.133333333,3.333333333,0.266666667,8
+252,291,ENGL,ENGL 103,18,26409,11:00am,12:50pm,M W,In Person,18,25,0,20,7,,Contact Instructor,"Amano-Tompkins, T",Lecture,72,Books,,2.4,3.333333333,0.266666667,9
+253,292,ENGL,ENGL 103,18,21605,,,,ONLINE,21,25,0,20,4,,Contact Instructor,"Tamayo, K",Lecture,72,Books,Online Course,2.8,3.333333333,0.266666667,10.5
+254,293,ENGL,ENGL 103,15A,26408,,,,ONLINE,22,25,0,20,3,,Contact Instructor,"Deon, L",Lecture,72,Books,Online Course,2.933333333,3.333333333,0.266666667,11
+255,294,ENGL,ENGL 103,9A,21474,,,,ONLINE,21,25,0,20,4,,Contact Instructor,"Torres-Guimaraes, N",Lecture,72,Books,Online Course,2.8,3.333333333,0.266666667,10.5
+256,295,ENGL,ENGL 103,15B,32521,,,,ONLINE,14,25,0,20,11,,Contact Instructor,"Ali, J",Lecture,72,Books,Online Course,1.866666667,3.333333333,0.266666667,7
+257,296,ENGL,ENGL 103,15B,24546,,,,ONLINE,16,25,0,20,9,,Contact Instructor,"Lamas, C",Lecture,72,Books,Online Course,2.133333333,3.333333333,0.266666667,8
+258,297,ENGL,ENGL 103,15B,30145,,,,ONLINE,23,25,0,20,2,,Contact Instructor,"Mitchell-Lambert, J",Lecture,72,Books,Online Course,3.066666667,3.333333333,0.266666667,11.5
+259,298,ENGL,ENGL 103,15B,30534,,,,ONLINE,26,25,0,20,0,20,Wait List,"McGaw, M",Lecture,72,Books,Online Course,3.466666667,3.333333333,0.266666667,13
+260,299,ENGL,ENGL 103,15B,30825,,,,ONLINE,23,25,0,20,2,,Contact Instructor,"Kessworth, B",Lecture,72,Books,Online Course,3.066666667,3.333333333,0.266666667,11.5
+261,300,ENGL,ENGL 103,9B,21476,,,,ONLINE,25,25,0,20,0,20,Wait List,"Serwin, L",Lecture,72,Books,Online Course,3.333333333,3.333333333,0.266666667,12.5
+262,301,ENGL,ENGL 103,9B,26413,,,,ONLINE,21,25,0,20,4,,Contact Instructor,"Carney, D",Lecture,72,Books,Online Course,2.8,3.333333333,0.266666667,10.5
+263,302,ENGL,ENGL 103,9B,30399,,,,ONLINE,24,25,0,20,1,20,Wait List,"Cheatham, T",Lecture,72,Books,Online Course,3.2,3.333333333,0.266666667,12
+264,303,ENGL,ENGL 103,9B,30866,9:00am,12:50pm,M W,In Person,19,25,0,20,6,,Contact Instructor,"Cheatham, T",Lecture,72,Books,,2.533333333,3.333333333,0.266666667,9.5
+265,304,ENGL,ENGL 107,18,25480,,,,ONLINE,16,35,0,20,19,,Contact Instructor,"Carney, D",Lecture,54,Books,Online Course,1.6,3.5,0.2,8
+266,305,ENGL,ENGL 110,9A,29212,,,,ONLINE,21,25,0,20,4,,Contact Instructor,"Cheatham, T",Lecture,72,Books,Online Course,2.8,3.333333333,0.266666667,10.5
+267,306,ENGL,ENGL 110,9B,30165,,,,ONLINE,20,25,0,20,5,,Contact Instructor,"Cheatham, T",Lecture,72,Books,Online Course,2.666666667,3.333333333,0.266666667,10
+268,307,ENGL,ENGL 221A,15B,32055,,,,ONLINE,13,35,0,20,22,,Contact Instructor,"Mitchell-Lambert, J",Lecture,54,Books,Online Course,1.3,3.5,0.2,6.5
+269,308,ENGL,ENGL 222,15B,26293,,,,ONLINE,14,30,0,20,16,,Contact Instructor,"Sartin, N",Lecture,54,Books,Online Course,1.4,3,0.2,7
+270,309,ENGL,ENGL 225,15B,27773,,,,ONLINE,28,35,0,20,7,,Contact Instructor,"Olague, M",Lecture,54,Books,Online Course,2.8,3.5,0.2,14
+271,310,ENGL,ENGL 228,15B,25481,,,,ONLINE,20,35,0,20,15,,Contact Instructor,"Clifford, S",Lecture,54,Books,Online Course,2,3.5,0.2,10
+272,311,ENGL,ENGL 230A,15B,23471,,,,ONLINE,30,35,0,20,5,,Contact Instructor,"Clifford, S",Lecture,54,Books,Online Course,3,3.5,0.2,15
+273,312,ENGL,ENGL 233,12,31284,,,,ONLINE,15,35,0,20,20,,Contact Instructor,"Gonzales, J",Lecture,54,Books,Online Course,1.5,3.5,0.2,7.5
+274,313,ENGL,ENGL 234,9B,26963,,,,ONLINE,21,35,0,20,14,,Contact Instructor,"Gonzales, J",Lecture,54,Books,Online Course,2.1,3.5,0.2,10.5
+275,314,ENGL,ENGL 240,15B,20220,11:00am,12:30pm,M W,In Person,22,25,0,20,3,,Contact Instructor,"Kayser, L",Lecture,54,Books,,2.2,2.5,0.2,11
+276,315,ENGL,ENGL 241,15B,20692,,,,ONLINE,13,20,0,20,7,,Contact Instructor,"Crozier, J",Lecture,54,Books,Online Course,1.3,2,0.2,6.5
+277,316,ENGL,ENGL 244,15B,32057,,,,ONLINE,13,25,0,20,12,,Contact Instructor,"Nave, M",Lecture,54,Books,Online Course,1.3,2.5,0.2,6.5
+278,317,ENGL,ENGL 246A,18,20221,,,,ONLINE,26,30,0,20,4,,Contact Instructor,"Cole, E",Lecture,54,Books,Online Course,2.6,3,0.2,13
+279,318,ENGL,ENGL 248A,18,20694,,,,ONLINE,18,35,0,20,17,,Contact Instructor,"Carney, D",Lecture,54,Books,Online Course,1.8,3.5,0.2,9
+280,319,ESL,ESL 3,15B,22678,,,,ONLINE,23,30,0,20,7,,Contact Instructor,"Sugihara-Cheetham, J",Lecture,90,Books,Online Course,3.833333333,5,0.333333333,11.5
+281,320,ESL,ESL 10,15B,30650,,,,ONLINE,18,25,0,20,7,,Contact Instructor,"Nunez, V",Lecture,54,Books,Online Course,1.8,2.5,0.2,9
+282,321,ESL,ESL 11,9A,25626,,,,ONLINE,14,35,0,20,21,,Contact Instructor,"Berry, P",Lecture,27,Books,Online Course,0.7,1.75,0.1,7
+283,322,ESL,ESL 12,9A,29219,11:30am,1:00pm,Tu Th,Hybrid,5,25,0,20,20,,Contact Instructor,"Rouhi, S",Lecture,27,Books,Hybrid Course,0.25,1.25,0.1,2.5
+284,323,ESL,ESL 21A,15B,32058,,,,ONLINE,10,35,0,20,25,,Contact Instructor,"Berry, P",Lecture,54,Books,Online Course,1,3.5,0.2,5
+285,324,ESL,ESL 31,9B,25629,,,,ONLINE,15,35,0,20,20,,Contact Instructor,"Berry, P",Lecture,27,Books,Online Course,0.75,1.75,0.1,7.5
+286,325,ESL,ESL 35,9B,29220,11:30am,1:00pm,Tu Th,Hybrid,3,35,0,20,32,,Contact Instructor,"Rouhi, S",Lecture,27,Books,Hybrid Course,0.15,1.75,0.1,1.5
+287,327,ESL,ESL 104,15B,27777,8:30am,11:20am,Tu,Hybrid,9,25,0,20,16,,Contact Instructor,"Rouhi, S",Lecture,90,Books,Hybrid Course,1.5,4.166666667,0.333333333,4.5
+288,329,ESL,ESL 105,15B,30648,,,,ONLINE,5,25,0,20,20,,Contact Instructor,"Sugihara-Cheetham, J",Lecture,90,Books,Online Course,0.833333333,4.166666667,0.333333333,2.5
+289,331,ESL,ESL 105,15B,23605,8:00am,10:50am,Tu Th,REMOTE,9,25,0,20,16,,Contact Instructor,"Sugihara-Cheetham, J",Lecture,90,Books,,1.5,4.166666667,0.333333333,4.5
+290,333,ESL,ESL 120,18,23697,8:30am,11:00am,Tu Th,Hybrid,15,30,0,20,15,,Contact Instructor,"Cox, W",Lecture,90,Books,Hybrid Course,2.5,5,0.333333333,7.5
+291,335,ESL,ESL 120,15B,23699,9:00am,12:00pm,M W,REMOTE,10,25,0,20,15,,Contact Instructor,"Nunez, V",Lecture,90,Books,,1.666666667,4.166666667,0.333333333,5
+292,337,ESL,ESL 152,18,29822,9:30am,11:50am,M,Hybrid,22,25,0,20,3,,Contact Instructor,"McIlroy, L",Lecture,90,Books,Hybrid Course,3.666666667,4.166666667,0.333333333,11
+293,339,ESL,ESL 152,15B,27913,,,,ONLINE,15,25,0,20,10,,Contact Instructor,"McIlroy, L",Lecture,90,Books,Online Course,2.5,4.166666667,0.333333333,7.5
+294,341,FREN,FREN 101,18,23952,,,,ONLINE,28,30,0,20,2,20,Wait List,"Bordage, N",Lecture,90,Books,Online Course,4.666666667,5,0.333333333,14
+295,343,FREN,FREN 101,18,29223,,,,Hybrid,0,0,0,0,0,,Cancelled,STAFF,Lecture,90,Books,Hybrid Course,0,0,0.333333333,0
+296,344,FREN,FREN 101,15B,32423,6:00pm,8:15pm,Tu Th,REMOTE,25,30,0,10,5,,Contact Instructor,"Nicolas, J",Lecture,90,Books,,4.166666667,5,0.333333333,12.5
+297,346,FREN,FREN 102,18,20235,,,,ONLINE,8,25,0,20,17,,Contact Instructor,"Bordage, N",Lecture,90,Books,Online Course,1.333333333,4.166666667,0.333333333,4
+298,348,GERM,GERM 101,18,22436,,,,ONLINE,22,30,0,20,8,,Contact Instructor,"Salvilla, J",Lecture,90,Books,Online Course,3.666666667,5,0.333333333,11
+299,350,JAPN,JAPN 101,18,21649,,,,ONLINE,29,30,0,20,1,,Contact Instructor,"Dealba-Yount, C",Lecture,90,Books,Online Course,4.833333333,5,0.333333333,14.5
+300,352,JAPN,JAPN 101,15B,28009,,,,ONLINE,30,30,0,20,0,20,Wait List,"Dealba-Yount, C",Lecture,90,Books,Online Course,5,5,0.333333333,15
+301,354,JAPN,JAPN 101,15B,21299,2:00pm,4:50pm,M W,In Person,24,30,0,20,6,20,Wait List,"Larsen, T",Lecture,90,Books,,4,5,0.333333333,12
+302,356,JAPN,JAPN 102,15A,30178,4:30pm,6:45pm,Th,Hybrid,8,25,0,20,17,,Contact Instructor,"Larsen, T",Lecture,90,Books,Hybrid Course,1.333333333,4.166666667,0.333333333,4
+303,358,JAPN,JAPN 201,18,32298,,,,ONLINE,11,25,0,10,14,,Contact Instructor,"Ketenchian, G",Lecture,90,Books,Online Course,1.833333333,4.166666667,0.333333333,5.5
+304,360,READ,READ 100,15B,32059,2:00pm,3:00pm,Tu,Hybrid,17,29,0,20,12,,Contact Instructor,"Helberg, B",Lecture,54,Books,Hybrid Course,1.7,2.9,0.2,8.5
+305,361,READ,READ 101,18,30187,,,,ONLINE,10,29,0,20,19,,Contact Instructor,"Paige, M",Lecture,54,Books,Online Course,1,2.9,0.2,5
+306,362,READ,READ 101,18,30656,,,,ONLINE,23,29,0,20,6,,Contact Instructor,"Belroy, B",Lecture,54,Books,Online Course,2.3,2.9,0.2,11.5
+307,363,READ,READ 101,18,30657,,,,ONLINE,12,29,0,20,17,,Contact Instructor,"Paige, M",Lecture,54,Books,Online Course,1.2,2.9,0.2,6
+308,364,READ,READ 101,15B,30184,,,,ONLINE,25,29,0,20,4,,Contact Instructor,"Belroy, B",Lecture,54,Books,Online Course,2.5,2.9,0.2,12.5
+309,365,READ,READ 101,15B,30185,8:00am,10:00am,Tu Th,In Person,20,0,0,0,0,,Closed,"Hall, A",Lecture,54,Books,,2,0,0.2,10
+310,366,READ,READ 101,15B,30653,2:45pm,3:50pm,Tu Th F,WHS *,28,0,0,0,0,,Closed,"Williams, R",Lecture,54,Books,,2.8,0,0.2,14
+311,367,READ,READ 101,15B,30654,8:20am,9:25am,Tu Th F,In Person,26,0,0,0,0,,Closed,"Williams, R",Lecture,54,Books,,2.6,0,0.2,13
+312,368,READ,READ 101,15B,32170,12:30pm,2:00pm,M W,In Person,17,0,0,0,0,,Closed,"Paige, M",Lecture,54,Books,,1.7,0,0.2,8.5
+313,369,READ,READ 101,15B,30660,12:30pm,2:00pm,Tu,Hybrid,12,29,0,20,17,,Contact Instructor,"Helberg, B",Lecture,54,Books,Hybrid Course,1.2,2.9,0.2,6
+314,370,READ,READ 101,15B,30661,,,,ONLINE,9,29,0,20,20,,Contact Instructor,"Belroy, B",Lecture,54,Books,Online Course,0.9,2.9,0.2,4.5
+315,371,READ,READ 101,15A,29629,8:45am,9:50am,M W F,In Person,27,0,0,0,0,,Closed,"Hall, A",Lecture,54,Books,,2.7,0,0.2,13.5
+316,372,READ,READ 101,15A,32300,8:45am,9:50am,M W F,In Person,28,0,0,0,0,,Closed,"Magabo, S",Lecture,54,Books,,2.8,0,0.2,14
+317,373,READ,READ 101,6,32418,,,,ONLINE,19,29,0,10,10,,Contact Instructor,"Helberg, B",Lecture,54,Books,Online Course,1.9,2.9,0.2,9.5
+318,374,READ,READ 101,6,32419,,,,ONLINE,26,29,0,10,3,,Contact Instructor,"Paige, M",Lecture,54,Books,Online Course,2.6,2.9,0.2,13
+319,375,READ,READ 103,18,21653,,,,ONLINE,17,29,0,20,12,,Contact Instructor,"Paige, M",Lecture,54,Books,Online Course,1.7,2.9,0.2,8.5
+320,376,READ,READ 103,18,31559,,,,ONLINE,23,29,0,20,6,,Contact Instructor,"Belroy, B",Lecture,54,Books,Online Course,2.3,2.9,0.2,11.5
+321,377,READ,READ 103,15B,25492,,,,ONLINE,25,29,0,20,4,,Contact Instructor,"Helberg, B",Lecture,54,Books,Online Course,2.5,2.9,0.2,12.5
+322,378,READ,READ 103,15B,31560,,,,ONLINE,14,29,0,20,15,,Contact Instructor,"Belroy, B",Lecture,54,Books,Online Course,1.4,2.9,0.2,7
+323,379,SPAN,SPAN 101,18,20562,,,,ONLINE,28,30,0,20,2,,Contact Instructor,"Cabuto, F",Lecture,90,Books,Online Course,4.666666667,5,0.333333333,14
+324,381,SPAN,SPAN 101,18,20563,,,,ONLINE,26,30,0,20,4,,Contact Instructor,"Cabuto, F",Lecture,90,Books,Online Course,4.333333333,5,0.333333333,13
+325,383,SPAN,SPAN 101,18,23946,,,,ONLINE,25,30,0,20,5,,Contact Instructor,"Cabuto, F",Lecture,90,Books,Online Course,4.166666667,5,0.333333333,12.5
+326,385,SPAN,SPAN 101,18,23948,,,,ONLINE,25,30,0,20,5,,Contact Instructor,"Navarro, B",Lecture,90,Books,Online Course,4.166666667,5,0.333333333,12.5
+327,387,SPAN,SPAN 101,18,20564,,,,ONLINE,22,30,0,20,8,,Contact Instructor,"Hernandez, I",Lecture,90,Books,Online Course,3.666666667,5,0.333333333,11
+328,389,SPAN,SPAN 101,18,20565,8:00am,10:15am,Tu Th,In Person,22,30,0,20,8,,Contact Instructor,"Vejar, I",Lecture,90,Books,,3.666666667,5,0.333333333,11
+329,391,SPAN,SPAN 101,18,24591,,,,ONLINE,17,30,0,20,13,,Contact Instructor,"Huesca, C",Lecture,90,Books,Online Course,2.833333333,5,0.333333333,8.5
+330,393,SPAN,SPAN 101,18,30831,,,,ONLINE,18,30,0,20,12,,Contact Instructor,"Linares, M",Lecture,90,Books,Online Course,3,5,0.333333333,9
+331,395,SPAN,SPAN 101,18,28011,,,,ONLINE,25,30,0,20,5,,Contact Instructor,"Cifuentes, O",Lecture,90,Books,Online Course,4.166666667,5,0.333333333,12.5
+332,397,SPAN,SPAN 101,15B,20832,,,,ONLINE,25,30,0,20,5,,Contact Instructor,"Navarro, B",Lecture,90,Books,Online Course,4.166666667,5,0.333333333,12.5
+333,399,SPAN,SPAN 101,15B,20834,,,,ONLINE,29,30,0,20,1,20,Wait List,"Vejar, I",Lecture,90,Books,Online Course,4.833333333,5,0.333333333,14.5
+334,401,SPAN,SPAN 101,15B,26981,,,,ONLINE,26,30,0,20,4,,Contact Instructor,"Ugalde, M",Lecture,90,Books,Online Course,4.333333333,5,0.333333333,13
+335,403,SPAN,SPAN 101,15B,28013,,,,ONLINE,23,30,0,20,7,20,Wait List,"Hernandez, I",Lecture,90,Books,Online Course,3.833333333,5,0.333333333,11.5
+336,405,SPAN,SPAN 101,15A,27923,9:00am,2:20pm,F,In Person,10,30,0,20,20,,Contact Instructor,"Huesca, C",Lecture,90,Books,,1.666666667,5,0.333333333,5
+337,407,SPAN,SPAN 101,9B,32508,,,,ONLINE,26,30,0,20,4,20,Wait List,"Arce, C",Lecture,90,Books,Online Course,4.333333333,5,0.333333333,13
+338,409,SPAN,SPAN 102,18,20566,,,,ONLINE,21,25,0,20,4,,Contact Instructor,"Cabuto, F",Lecture,90,Books,Online Course,3.5,4.166666667,0.333333333,10.5
+339,411,SPAN,SPAN 102,18,22351,,,,ONLINE,15,25,0,20,10,,Contact Instructor,"Garcia-Rios, F",Lecture,90,Books,Online Course,2.5,4.166666667,0.333333333,7.5
+340,413,SPAN,SPAN 111,18,22682,,,,ONLINE,25,0,0,0,0,,Closed,"Huesca, C",Lecture,90,Books,Online Course,4.166666667,0,0.333333333,12.5
+341,415,SPAN,SPAN 111,18,20568,,,,ONLINE,25,30,0,20,5,,Contact Instructor,"Ugalde, M",Lecture,90,Books,Online Course,4.166666667,5,0.333333333,12.5
+342,417,SPAN,SPAN 111,15B,29345,,,,ONLINE,21,30,0,20,9,,Contact Instructor,"Ugalde, M",Lecture,90,Books,Online Course,3.5,5,0.333333333,10.5
+343,419,SPAN,SPAN 112,18,20569,,,,ONLINE,8,25,0,20,17,,Contact Instructor,"Huesca, C",Lecture,90,Books,Online Course,1.333333333,4.166666667,0.333333333,4
+344,421,SPAN,SPAN 201,18,20835,4:00pm,6:15pm,Tu Th,In Person,8,25,0,20,17,,Contact Instructor,"Trujillo, Y",Lecture,90,Books,,1.333333333,4.166666667,0.333333333,4
+345,423,SPAN,SPAN 223,16,24593,9:00am,12:05pm,Sa,In Person,14,25,0,20,11,,Contact Instructor,"Bedolla, J",Lecture,54,Books,,1.4,2.5,0.2,7
+346,424,SPAN,SPAN 245,18,20570,,,,ONLINE,31,35,0,20,4,,Contact Instructor,"Arce, C",Lecture,54,Books,Online Course,3.1,3.5,0.2,15.5

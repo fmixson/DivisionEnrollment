@@ -105,15 +105,16 @@ class DataframeWork:
 
 
 
-        lecture_enrollment_df.loc[lecture_enrollment_df['Modality'] == 'Hybrid Course', 'Room'] = 'Hybrid'
-        lecture_enrollment_df.loc[lecture_enrollment_df['Room'] == 'ONLINE', 'Modality'] = 'Online Course'
-        rooms = ['LA106', 'LA109', 'LA201', 'SS207', 'LA213', 'LC218', 'LA110', 'SS211', 'SS225', 'LA103', 'SS224',
+        lecture_enrollment_df.loc[lecture_enrollment_df['Modality'] == 'Hybrid Course', 'Modality'] = 'Hybrid'
+        lecture_enrollment_df.loc[lecture_enrollment_df['Room'] == 'ONLINE', 'Modality'] = 'Online'
+        lecture_enrollment_df.loc[lecture_enrollment_df['Room'] == 'REMOTE', 'Modality'] = 'Remote'
+
+        rooms = ['AHS *','WHS *', 'LA105', 'LA106', 'LA109', 'LA201', 'SS207', 'LA213', 'LC218', 'LA110', 'SS211', 'SS225', 'LA103', 'SS224',
                   'LC217','LA211', 'LA202', 'LA209', 'LA210', 'LA205', 'LA212', 'LA204', 'SS214', 'LA212', 'SS136', 'LC213',
                  'LA203', 'FA134', 'LM20*', 'FA133', 'SS136', 'BELF*', 'MAYF*', 'AHS *', 'LC134', 'SPSM*', 'WHS *', 'NHS*',
                  'STPI*', 'DOWN*', 'LA104', 'MP209', 'SS137', 'SS212', 'SS213', 'WARR*', 'AHS*', 'WHS*']
-
         for room in rooms:
-            lecture_enrollment_df.loc[lecture_enrollment_df['Room'] == room, 'Room'] = 'In Person'
+            lecture_enrollment_df.loc[lecture_enrollment_df['Room'] == room, 'Modality'] = 'In Person'
 
         lecture_enrollment_df['FTES'] = lecture_enrollment_df['Size'] * (
                     ((lecture_enrollment_df['Hours'] / 18) * 17.5) / 525)
@@ -150,6 +151,9 @@ class DataframeWork:
 
 
             elif 'Nine Week A M-F Session (1/9/2023 - 3/10/2023)' \
+                    in lecture_enrollment_df.loc[i, 'Session']:
+                    lecture_enrollment_df.loc[i, 'Session'] = '9A'
+            elif 'Nine  Week  A4  Thursday Session (1/12/2023  -  3/9/2023)' \
                     in lecture_enrollment_df.loc[i, 'Session']:
                     lecture_enrollment_df.loc[i, 'Session'] = '9A'
             elif 'Nine Week A7 T,Th Session' \
@@ -197,10 +201,14 @@ labelTag = tag.find_all('label')
 
 
 semesters = []
+
 for label in labelTag:
     print(label)
     semesters.append(label.text[:-1])
 print('semester', semesters)
+
+if len(semesters) == 1:
+    num_semesters = 'one'
 
 global semester_glob
 for semester in semesters:
@@ -211,7 +219,8 @@ for semester in semesters:
         page_source = driver.page_source
         soup = BeautifulSoup(page_source, 'lxml')
         page_loading = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, 'divisions')))
-        semester = driver.find_element(By.XPATH, 'html/body/form/p[1]/label[2]/input').click()
+        if num_semesters != 'one':
+            semester = driver.find_element(By.XPATH, 'html/body/form/p[1]/label[2]/input').click()
         page_loading = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, 'divisions')))
         semester = driver.find_element(By.XPATH, 'html/body/form/p[1]/label[1]/input').click()
         check_all = driver.find_element(By.XPATH, '/html/body/form/table[1]/tbody/tr[1]/td[1]/label/input').click()
