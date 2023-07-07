@@ -100,28 +100,42 @@ class DataframeWork:
 
     def lecture_only(self):
         lecture_df = self.enrollment_df[self.enrollment_df['Type'] == 'Lecture'].reset_index()
+        lecture_enrollment_df = self.enrollment_df
         print(lecture_df)
-        lecture_enrollment_df = lecture_df
+        # lecture_enrollment_df = lecture_df
 
+        for i in range(len(lecture_enrollment_df)):
+                if lecture_enrollment_df.loc[i, 'Room'] == 'ONLINE':
+                    lecture_enrollment_df.loc[i, 'Modality2'] = 'ONLINE'
+                elif lecture_enrollment_df.loc[i, 'Room'] == 'REMOTE':
+                    lecture_enrollment_df.loc[i, 'Modality2'] = 'REMOTE'
+                else:
+                    lecture_enrollment_df.loc[i, 'Modality2'] = 'IN PERSON'
+        for i in range(len(lecture_enrollment_df)):
+            if lecture_enrollment_df.loc[i, 'Modality'] == 'Hybrid Course':
+                lecture_enrollment_df.loc[i, 'Modality2'] = 'HYBRID'
+            if lecture_enrollment_df.loc[i, 'Modality'] == 'Hyflex Course':
+                lecture_enrollment_df.loc[i, 'Modality2'] = 'HYFLEX'
 
-
-        lecture_enrollment_df['Modality2']=lecture_enrollment_df.loc[lecture_enrollment_df['Modality'] == 'Hybrid Course', 'Modality2'] = 'Hybrid'
-        lecture_enrollment_df.loc[lecture_enrollment_df['Room'] == 'ONLINE', 'Modality2'] = 'Online'
-        lecture_enrollment_df.loc[lecture_enrollment_df['Room'] == 'REMOTE', 'Modality2'] = 'Remote'
-        lecture_enrollment_df.loc[lecture_enrollment_df['Modality'] == '(Honors Section) Hybrid Course', 'Modality2'] = 'Hybrid'
-
-        rooms = ['AHS *','WHS *', 'LA105', 'LA106', 'LA109', 'LA201', 'SS207', 'LA213', 'LC218', 'LA110', 'SS211', 'SS225', 'LA103', 'SS224',
-                  'LC217','LA211', 'LA202', 'LA209', 'LA210', 'LA205', 'LA212', 'LA204', 'SS214', 'LA212', 'SS136', 'LC213',
-                 'LA203', 'FA134', 'LM20*', 'FA133', 'SS136', 'BELF*', 'MAYF*', 'AHS *', 'LC134', 'SPSM*', 'WHS *', 'NHS*',
-                 'STPI*', 'DOWN*', 'LA104', 'MP209', 'SS137', 'SS212', 'SS213', 'WARR*', 'AHS*', 'WHS*']
-        for room in rooms:
-                lecture_enrollment_df.loc[lecture_enrollment_df['Room'] == room, 'Modality2'] = 'In Person'
-        lecture_enrollment_df.loc[lecture_enrollment_df['Modality'] == 'Hybrid Course', 'Modality2'] = 'Hybrid'
+        # lecture_enrollment_df['Modality2']=lecture_enrollment_df.loc[lecture_enrollment_df['Modality'] == 'Hybrid Course', 'Modality2'] = 'HYBRID'
+        # lecture_enrollment_df['Modality2'] = lecture_enrollment_df.loc[lecture_enrollment_df['Modality'] == 'Hyflex Course', 'Modality2'] = 'HYFLEX'
+        # lecture_enrollment_df.loc[lecture_enrollment_df['Room'] == 'ONLINE', 'Modality2'] = 'Online'
+        # lecture_enrollment_df.loc[lecture_enrollment_df['Room'] == 'REMOTE', 'Modality2'] = 'Remote'
+        # lecture_enrollment_df.loc[lecture_enrollment_df['Modality'] == '(Honors Section) Hybrid Course', 'Modality2'] = 'Hybrid'
+        #
+        # rooms = ['AHS *','WHS *', 'LA105', 'LA106', 'LA109', 'LA201', 'SS207', 'LA213', 'LC218', 'LA110', 'SS211', 'SS225', 'LA103', 'SS224',
+        #           'LC217','LA211', 'LA202', 'LA209', 'LA210', 'LA205', 'LA212', 'LA204', 'SS214', 'LA212', 'SS136', 'LC213',
+        #          'LA203', 'FA134', 'LM20*', 'FA133', 'SS136', 'BELF*', 'MAYF*', 'AHS *', 'LC134', 'SPSM*', 'WHS *', 'NHS*',
+        #          'STPI*', 'DOWN*', 'LA104', 'MP209', 'SS137', 'SS212', 'SS213', 'WARR*', 'AHS*', 'WHS*']
+        # for room in rooms:
+        #         lecture_enrollment_df.loc[lecture_enrollment_df['Room'] == room, 'Modality2'] = 'In Person'
+        # lecture_enrollment_df.loc[lecture_enrollment_df['Modality'] == 'Hybrid Course', 'Modality2'] = 'Hybrid'
         lecture_enrollment_df['FTES'] = lecture_enrollment_df['Size'] * (
                     ((lecture_enrollment_df['Hours'] / 18) * 17.5) / 525)
-        lecture_enrollment_df['Potential FTEF'] = lecture_enrollment_df['Max'] * (((lecture_enrollment_df['Hours'] / 18) * 17.5) / 525)
+        lecture_enrollment_df['Potential FTES'] = lecture_enrollment_df['Max'] * (((lecture_enrollment_df['Hours'] / 18) * 17.5) / 525)
         lecture_enrollment_df['FTEF'] = (lecture_enrollment_df['Hours'] / 18)/ 15
         lecture_enrollment_df['Efficiency'] = lecture_enrollment_df['FTES'] / lecture_enrollment_df['FTEF']
+        lecture_enrollment_df['Potential Efficiency'] = lecture_enrollment_df['Potential FTES'] / lecture_enrollment_df['FTEF']
         lecture_enrollment_df.reset_index()
         print('lecture df', lecture_enrollment_df)
         for i in range(len(lecture_enrollment_df)):
@@ -137,7 +151,21 @@ class DataframeWork:
                 lecture_enrollment_df.loc[i,'Session'] = '15A'
             elif 'Fifteen Week A6 ' in lecture_enrollment_df.loc[i, 'Session']:
                 lecture_enrollment_df.loc[i,'Session'] = '15A'
+            elif 'Fifteen Week A7 ' in lecture_enrollment_df.loc[i, 'Session']:
+                lecture_enrollment_df.loc[i,'Session'] = '15A'
+            elif 'Fifteen Week T, W, F Session' in lecture_enrollment_df.loc[i, 'Session']:
+                lecture_enrollment_df.loc[i,'Session'] = '15A'
+
+
+
+
             elif 'Fifteen Week B M-F Session' in lecture_enrollment_df.loc[i, 'Session']:
+                lecture_enrollment_df.loc[i,'Session'] = '15B'
+            elif 'Fifteen Week B3 ' in lecture_enrollment_df.loc[i, 'Session']:
+                lecture_enrollment_df.loc[i,'Session'] = '15B'
+            elif 'Fifteen Week B4 ' in lecture_enrollment_df.loc[i, 'Session']:
+                lecture_enrollment_df.loc[i,'Session'] = '15B'
+            elif 'Fifteen Week B5 ' in lecture_enrollment_df.loc[i, 'Session']:
                 lecture_enrollment_df.loc[i,'Session'] = '15B'
             elif 'Fifteen Week B6 ' in lecture_enrollment_df.loc[i, 'Session']:
                 lecture_enrollment_df.loc[i,'Session'] = '15B'
@@ -149,34 +177,81 @@ class DataframeWork:
                 lecture_enrollment_df.loc[i,'Session'] = '15B'
             elif 'Fifteen Week B16 ' in lecture_enrollment_df.loc[i, 'Session']:
                 lecture_enrollment_df.loc[i,'Session'] = '15B'
+            elif 'Fifteen Week B12 T' in lecture_enrollment_df.loc[i, 'Session']:
+                lecture_enrollment_df.loc[i,'Session'] = '15B'
+            elif 'Fifteen Week B13 T' in lecture_enrollment_df.loc[i, 'Session']:
+                lecture_enrollment_df.loc[i,'Session'] = '15B'
+            elif 'Fifteen Week 151 ' in lecture_enrollment_df.loc[i, 'Session']:
+                lecture_enrollment_df.loc[i,'Session'] = '15B'
 
 
-            elif 'Nine Week A M-F Session (1/9/2023 - 3/10/2023)' \
+
+
+            elif 'Nine Week A ' \
                     in lecture_enrollment_df.loc[i, 'Session']:
                     lecture_enrollment_df.loc[i, 'Session'] = '9A'
-            elif 'Nine  Week  A4  Thursday Session (1/12/2023  -  3/9/2023)' \
+            elif 'Nine Week A1 ' \
                     in lecture_enrollment_df.loc[i, 'Session']:
                     lecture_enrollment_df.loc[i, 'Session'] = '9A'
-            elif 'Nine Week A7 T,Th Session' \
+            elif 'Nine Week A2 ' \
                     in lecture_enrollment_df.loc[i, 'Session']:
                     lecture_enrollment_df.loc[i, 'Session'] = '9A'
-            elif 'Nine Week B M-F Session' \
+            elif 'Nine  Week  A4' \
+                    in lecture_enrollment_df.loc[i, 'Session']:
+                    lecture_enrollment_df.loc[i, 'Session'] = '9A'
+            elif 'Nine Week A6 ' \
+                    in lecture_enrollment_df.loc[i, 'Session']:
+                    lecture_enrollment_df.loc[i, 'Session'] = '9A'
+            elif 'Nine Week A7 ' \
+                    in lecture_enrollment_df.loc[i, 'Session']:
+                    lecture_enrollment_df.loc[i, 'Session'] = '9A'
+            elif 'Nine Week AJ '\
+                    in lecture_enrollment_df.loc[i, 'Session']:
+                    lecture_enrollment_df.loc[i, 'Session'] = '9A'
+
+
+
+
+
+            elif 'Nine Week B M-F Session' in lecture_enrollment_df.loc[i, 'Session']:
+                lecture_enrollment_df.loc[i,'Session'] = '9B'
+            elif 'Nine Week B5 ' in lecture_enrollment_df.loc[i, 'Session']:
+                lecture_enrollment_df.loc[i,'Session'] = '9B'
+            elif 'Nine Week B2 ' \
                     in lecture_enrollment_df.loc[i, 'Session']:
                 lecture_enrollment_df.loc[i,'Session'] = '9B'
-            elif 'Nine Week B2 Tuesday Session' \
+            elif 'Nine Week B6 ' \
                     in lecture_enrollment_df.loc[i, 'Session']:
                 lecture_enrollment_df.loc[i,'Session'] = '9B'
-            elif 'Nine Week B6 M,W, Session' \
-                    in lecture_enrollment_df.loc[i, 'Session']:
+            elif 'Nine Week B7 ' in lecture_enrollment_df.loc[i, 'Session']:
                 lecture_enrollment_df.loc[i,'Session'] = '9B'
-            elif 'Nine Week B7 T, Th Session' in lecture_enrollment_df.loc[i, 'Session']:
+            elif 'Nine Week B10' in lecture_enrollment_df.loc[i, 'Session']:
                 lecture_enrollment_df.loc[i,'Session'] = '9B'
+
+
             elif 'Sixteen' in lecture_enrollment_df.loc[i, 'Session']:
                 lecture_enrollment_df.loc[i, 'Session'] = '16'
             elif 'Twelve' in lecture_enrollment_df.loc[i, 'Session']:
                 lecture_enrollment_df.loc[i,'Session'] = '12'
-            # elif 'Six' in lecture_enrollment_df.loc[i, 'Session']:
-            #     lecture_enrollment_df.loc[i,'Session'] = '6'
+            elif 'Seven' in lecture_enrollment_df.loc[i, 'Session']:
+                lecture_enrollment_df.loc[i,'Session'] = '7'
+            elif 'Six Week 1' in lecture_enrollment_df.loc[i, 'Session']:
+                lecture_enrollment_df.loc[i,'Session'] = '6A'
+            elif 'Six Week 2' in lecture_enrollment_df.loc[i, 'Session']:
+                lecture_enrollment_df.loc[i,'Session'] = '6B'
+            elif 'Six Week 3' in lecture_enrollment_df.loc[i, 'Session']:
+                lecture_enrollment_df.loc[i,'Session'] = '6C'
+            elif 'Six Week B11' in lecture_enrollment_df.loc[i, 'Session']:
+                lecture_enrollment_df.loc[i,'Session'] = '6A'
+            elif 'Six Week C13' in lecture_enrollment_df.loc[i, 'Session']:
+                lecture_enrollment_df.loc[i,'Session'] = '6C'
+            elif 'Six Week B6' in lecture_enrollment_df.loc[i, 'Session']:
+                lecture_enrollment_df.loc[i,'Session'] = '6C'
+            elif 'Six Week B6' in lecture_enrollment_df.loc[i, 'Session']:
+                lecture_enrollment_df.loc[i,'Session'] = '6C'
+            elif 'Six Week B6' in lecture_enrollment_df.loc[i, 'Session']:
+                lecture_enrollment_df.loc[i,'Session'] = '6C'
+
             elif 'Enrollment' in lecture_enrollment_df.loc[i, 'Session']:
                 lecture_enrollment_df.loc[i,'Session'] = 'Open'
         print('semester', self.semester)
@@ -222,31 +297,70 @@ semester = 0
 global semester_glob
 # for semester in semesters:
 semester_glob = semester
-if "Summer" in user_choice:
-    # driver.get('https://secure.cerritos.edu/schedule/')
-    # page_loading = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, 'divisions')))
-    # page_source = driver.page_source
-    # soup = BeautifulSoup(page_source, 'lxml')
-    # page_loading = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, 'divisions')))
-    # if num_semesters != 'one':
-    #     semester = driver.find_element(By.XPATH, 'html/body/form/p[1]/label[2]/input').click()
-    # page_loading = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, 'divisions')))
-    semester = driver.find_element(By.XPATH, 'html/body/form/p[1]/label[2]/input').click()
-    semester = driver.find_element(By.XPATH,'/html/body/form/p[1]/label[1]/input').click()
-    check_all = driver.find_element(By.XPATH, '/html/body/form/table[1]/tbody/tr[1]/td[1]/label/input').click()
-    check_LA = driver.find_element(By.XPATH, 'html/body/form/table[6]/tbody/tr[2]/td[3]/label/input').click()
-    # /html/body/form/table[6]/tbody/tr[2]/td[3]/label/input
-    # semester = driver.find_element(By.XPATH,'html/body/form/p[1]/label[2]/input').click()
+# if "Summer" in user_choice:
+#     # driver.get('https://secure.cerritos.edu/schedule/')
+#     # page_loading = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, 'divisions')))
+#     # page_source = driver.page_source
+#     # soup = BeautifulSoup(page_source, 'lxml')
+#     # page_loading = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, 'divisions')))
+#     # if num_semesters != 'one':
+#     #     semester = driver.find_element(By.XPATH, 'html/body/form/p[1]/label[2]/input').click()
+#     # page_loading = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, 'divisions')))
+#     semester = driver.find_element(By.XPATH, 'html/body/form/p[1]/label[2]/input').click()
+# semester = driver.find_element(By.XPATH,'/html/body/form/p[1]/label[1]/input').click()
+#     check_all = driver.find_element(By.XPATH, '/html/body/form/table[1]/tbody/tr[1]/td[1]/label/input').click()
+#     check_LA = driver.find_element(By.XPATH, 'html/body/form/table[6]/tbody/tr[2]/td[3]/label/input').click()
+#     # /html/body/form/table[6]/tbody/tr[2]/td[3]/label/input
+#     # semester = driver.find_element(By.XPATH,'html/body/form/p[1]/label[2]/input').click()
 if 'Fall' in user_choice:
     semester = driver.find_element(By.XPATH, 'html/body/form/p[1]/label[2]/input').click()
-    semester = driver.find_element(By.XPATH, 'html/body/form/p[1]/label[2]/input').click()
-    check_all = driver.find_element(By.XPATH, '/html/body/form/table[1]/tbody/tr[1]/td[1]/label/input').click()
-    check_LA = driver.find_element(By.XPATH, '/html/body/form/table[6]/tbody/tr[5]/td[2]/label/input').click()
+    semester = driver.find_element(By.XPATH, 'html/body/form/p[1]/label[1]/input').click()
+
+    # check_all = driver.find_element(By.XPATH, '/html/body/form/table[1]/tbody/tr[1]/td[1]/label/input').click()
+    # check_LA = driver.find_element(By.XPATH, '/html/body/form/table[6]/tbody/tr[5]/td[2]/label/input').click()
 if 'Spring' in user_choice:
     semester = driver.find_element(By.XPATH, 'html/body/form/p[1]/label[2]/input').click()
     semester = driver.find_element(By.XPATH, 'html/body/form/p[1]/label[2]/input').click()
     check_all = driver.find_element(By.XPATH, '/html/body/form/table[1]/tbody/tr[1]/td[1]/label/input').click()
     check_LA = driver.find_element(By.XPATH, '/html/body/form/table[6]/tbody/tr[5]/td[2]/label/input').click()
+
+check_all = driver.find_element(By.XPATH, '/html/body/form/table[1]/tbody/tr[1]/td[1]/label/input').click()
+# check_SEM = driver.find_element(By.XPATH, '/html/body/form/table[6]/tbody/tr[2]/td[3]/label/input').click()
+# check_HO = driver.find_element(By.XPATH, '/html/body/form/table[6]/tbody/tr[2]/td[2]/label/input').click()
+# check_HSS = driver.find_element(By.XPATH, '/html/body/form/table[6]/tbody/tr[4]/td[2]/label/input').click()
+# check_LRC = driver.find_element(By.XPATH, '/html/body/form/table[6]/tbody/tr[1]/td[3]/label/input').click()
+# check_TECH = driver.find_element(By.XPATH, '/html/body/form/table[6]/tbody/tr[3]/td[3]/label/input').click()
+# check_BE = driver.find_element(By.XPATH, '/html/body/form/table[6]/tbody/tr[2]/td[1]/label/input').click()
+# check_KIN = driver.find_element(By.XPATH, '/html/body/form/table[6]/tbody/tr[3]/td[2]/label/input').click()
+# check_CITE = driver.find_element(By.XPATH, '/html/body/form/table[6]/tbody/tr[4]/td[1]/label/input').click()
+if 'Fall' in user_choice:
+    # check_TECH = driver.find_element(By.XPATH, '/html/body/form/table[6]/tbody/tr[3]/td[3]/label/input').click()
+    check_LA = driver.find_element(By.XPATH, '/html/body/form/table[6]/tbody/tr[5]/td[2]/label/input').click()
+    check_FA = driver.find_element(By.XPATH, '/html/body/form/table[6]/tbody/tr[1]/td[2]/label/input').click()
+    check_Apprent = driver.find_element(By.XPATH, '/html/body/form/table[6]/tbody/tr[1]/td[1]/label/input').click()
+    check_SEM = driver.find_element(By.XPATH, '/html/body/form/table[6]/tbody/tr[2]/td[3]/label/input').click()
+    check_HO = driver.find_element(By.XPATH, '/html/body/form/table[6]/tbody/tr[2]/td[2]/label/input').click()
+    check_HSS = driver.find_element(By.XPATH, '/html/body/form/table[6]/tbody/tr[4]/td[2]/label/input').click()
+    check_LRC = driver.find_element(By.XPATH, '/html/body/form/table[6]/tbody/tr[1]/td[3]/label/input').click()
+    check_TECH = driver.find_element(By.XPATH, '/html/body/form/table[6]/tbody/tr[3]/td[3]/label/input').click()
+    check_BE = driver.find_element(By.XPATH, '/html/body/form/table[6]/tbody/tr[2]/td[1]/label/input').click()
+    check_KIN = driver.find_element(By.XPATH, '/html/body/form/table[6]/tbody/tr[3]/td[2]/label/input').click()
+    check_CITE = driver.find_element(By.XPATH, '/html/body/form/table[6]/tbody/tr[4]/td[1]/label/input').click()
+if 'Summer' in user_choice:
+    check_LA = driver.find_element(By.XPATH, '/html/body/form/table[6]/tbody/tr[2]/td[3]/label/input').click()
+    check_FA = driver.find_element(By.XPATH, '/html/body/form/table[6]/tbody/tr[2]/td[2]/label/input').click()
+    check_TECH = driver.find_element(By.XPATH, '/html/body/form/table[6]/tbody/tr[4]/td[3]/label/input').click()
+    check_SEM = driver.find_element(By.XPATH, '/html/body/form/table[6]/tbody/tr[3]/td[3]/label/input').click()
+    check_HO = driver.find_element(By.XPATH, '/html/body/form/table[6]/tbody/tr[3]/td[2]/label/input').click()
+    check_KIN = driver.find_element(By.XPATH, '/html/body/form/table[6]/tbody/tr[4]/td[2]/label/input').click()
+    check_HSS = driver.find_element(By.XPATH, '/html/body/form/table[6]/tbody/tr[1]/td[3]/label/input').click()
+    # check_SEM = driver.find_element(By.XPATH, '/html/body/form/table[6]/tbody/tr[3]/td[3]/label/input').click()
+    check_BE = driver.find_element(By.XPATH, '/html/body/form/table[6]/tbody/tr[2]/td[1]/label/input').click()
+    # check_HO = driver.find_element(By.XPATH, '/html/body/form/table[6]/tbody/tr[3]/td[2]/label/input').click()
+    check_CITE = driver.find_element(By.XPATH, '/html/body/form/table[6]/tbody/tr[4]/td[1]/label/input').click()
+# /html/body/form/table[6]/tbody/tr[4]/td[3]/label/input
+# /html/body/form/table[6]/tbody/tr[3]/td[3]/label/input
+
 click_View = driver.find_element(By.XPATH, '/html/body/form/p[4]/input').click()
 page_loading = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, 'ASL110descs')))
 headers = ['Dept', 'Course', 'Session', 'Class', 'Start', 'End', 'Days', 'Room', 'Size', 'Max', 'Wait', 'Cap', 'Seats',

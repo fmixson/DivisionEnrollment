@@ -222,7 +222,7 @@ semester = 0
 global semester_glob
 # for semester in semesters:
 semester_glob = semester
-if "Summer" in user_choice:
+# if "Summer" in user_choice:
     # driver.get('https://secure.cerritos.edu/schedule/')
     # page_loading = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, 'divisions')))
     # page_source = driver.page_source
@@ -231,8 +231,8 @@ if "Summer" in user_choice:
     # if num_semesters != 'one':
     #     semester = driver.find_element(By.XPATH, 'html/body/form/p[1]/label[2]/input').click()
     # page_loading = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, 'divisions')))
-    semester = driver.find_element(By.XPATH, 'html/body/form/p[1]/label[2]/input').click()
-    semester = driver.find_element(By.XPATH,'/html/body/form/p[1]/label[1]/input').click()
+    # semester = driver.find_element(By.XPATH, 'html/body/form/p[1]/label[2]/input').click()
+    # semester = driver.find_element(By.XPATH,'/html/body/form/p[1]/label[1]/input').click()
     # check_all = driver.find_element(By.XPATH, '/html/body/form/table[1]/tbody/tr[1]/td[1]/label/input').click()
     # check_LA = driver.find_element(By.XPATH, 'html/body/form/table[6]/tbody/tr[2]/td[3]/label/input').click()
     # /html/body/form/table[6]/tbody/tr[2]/td[3]/label/input
